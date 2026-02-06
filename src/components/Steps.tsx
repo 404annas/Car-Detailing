@@ -32,12 +32,12 @@ const Steps = () => {
         <section className="bg-white pb-10">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="flex items-center justify-between mb-10">
-                    <h2 className="text-3xl font-bold orb">
+                <div className="flex sm:flex-row flex-col gap-2 items-center justify-between mb-10">
+                    <h2 className="text-2xl sm:text-3xl font-bold orb">
                         GET STARTED
                     </h2>
 
-                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb">
+                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
                         BOOK NOW
                     </button>
                 </div>

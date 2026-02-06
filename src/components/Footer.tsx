@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
                     {/* Left Text */}
-                    <h2 className="text-4xl md:text-5xl font-semibold leading-none max-w-2xl orb">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-none max-w-2xl orb">
                         PORSCHE CAYENNE <span className="text-orange-500">BLACK EDITION</span>.
                         <br />
                         ELEGANCE AND <span className="text-orange-500">SPORTINESS</span>.
@@ -68,7 +68,7 @@ const Footer = () => {
 
                     {/* Copyright */}
                     <p className="text-xs text-gray-400 text-center">
-                        ©2026 Porsche Colombia | All rights reserved | Legal notices and privacy policies.
+                        Copyright © 2026 Porsche Colombia | All rights reserved | Legal notices and privacy policies.
                     </p>
                 </div>
             </div>

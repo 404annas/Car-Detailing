@@ -58,16 +58,16 @@ const Testimonials = () => {
         <section className="w-full py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="flex items-center justify-between mb-10">
-                    <h2 className="text-3xl font-bold orb">
+                <div className="flex sm:flex-row flex-col gap-2 items-center justify-between mb-10">
+                    <h2 className="text-2xl sm:text-3xl font-bold orb">
                         TESTIMONIALS
                     </h2>
 
-                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb">
+                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
                         CONTACT US
                     </button>
                 </div>                {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
                     {testimonials.map((item, index) => (
                         <div
                             key={index}

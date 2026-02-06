@@ -100,21 +100,21 @@ const cars = [
 
 const FeaturedCars = () => {
     return (
-        <section className="px-10 py-10 bg-white">
+        <section className="px-4 sm:px-10 py-10 bg-white">
 
             {/* Header */}
-            <div className="flex items-center justify-between mb-10">
-                <h2 className="text-3xl font-bold orb">
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-between mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold orb">
                     FEATURED CARS
                 </h2>
 
-                <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb">
+                <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit">
                     SHOW ALL
                 </button>
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
                 {cars.map((car, index) => (
                     <div
                         key={index}
@@ -138,7 +138,7 @@ const FeaturedCars = () => {
                         </div>
 
                         {/* Image */}
-                        <div className="relative h-52 w-full mb-4 rounded-xl overflow-hidden group">
+                        <div className="relative h-40 sm:h-52 w-full mb-4 rounded-xl overflow-hidden group">
                             <Image
                                 src={car.image}
                                 alt={car.name}
@@ -149,12 +149,12 @@ const FeaturedCars = () => {
 
                         {/* Specs */}
                         <div className="bg-[#0B1324] text-white rounded-xl p-3 space-y-4">
-                            <div className="grid grid-cols-4 gap-4 text-center text-sm border border-orange-500 rounded-xl py-3 px-1">
+                            <div className="grid grid-cols-4 gap-4 text-center text-xs sm:text-sm border border-orange-500 rounded-xl py-3 px-1">
                                 {car.specs.map((spec, i) => {
                                     const Icon = spec.icon
                                     return (
                                         <div key={i} className="flex flex-col items-center gap-1">
-                                            <Icon size={24} />
+                                            <Icon size={22} />
                                             <span>{spec.label}</span>
                                         </div>
                                     )
@@ -165,7 +165,7 @@ const FeaturedCars = () => {
                             <p className="text-xl orb font-semibold">{car.price}</p>
 
                             {/* Button */}
-                            <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-medium hover:bg-orange-600 orb transition-all duration-300 cursor-pointer">
+                            <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-medium hover:bg-orange-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
                                 SEE DETAILS
                             </button>
                         </div>
