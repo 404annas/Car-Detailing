@@ -30,8 +30,17 @@ const steps = [
 const Steps = () => {
     return (
         <section className="bg-white pb-10">
-            <div className="max-w-7xl mx-auto px-10">
+            <div className="max-w-7xl mx-auto px-6">
 
+                <div className="flex items-center justify-between mb-10">
+                    <h2 className="text-3xl font-bold orb">
+                        GET STARTED
+                    </h2>
+
+                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb">
+                        BOOK NOW
+                    </button>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 text-center">
                     {steps.map((step, index) => (
                         <div key={index} className="flex flex-col items-center">
