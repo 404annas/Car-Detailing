@@ -1,8 +1,11 @@
 import About from '@/components/About'
+import Cars from '@/components/Cars'
 import FeaturedCars from '@/components/FeaturedCars'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
+import Hero2 from '@/components/Hero2'
 import Navbar from '@/components/Navbar'
+import StepCards from '@/components/StepCards'
 import Steps from '@/components/Steps'
 import Testimonials from '@/components/Testimonials'
 
@@ -10,8 +13,11 @@ const Home = () => {
   return (
     <div>
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
+        <Hero2 />
         <About />
+        <Cars />
+        <StepCards />
         <FeaturedCars />
         <Steps />
         <Testimonials />
