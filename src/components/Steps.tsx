@@ -37,7 +37,7 @@ const Steps = () => {
                         GET STARTED
                     </h2>
 
-                    <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
+                    <button className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
                         BOOK NOW
                     </button>
                 </div>
@@ -46,7 +46,7 @@ const Steps = () => {
                         <div key={index} className="flex flex-col items-center">
 
                             {/* Icon Circle */}
-                            <div className="w-24 h-24 rounded-full bg-[#FF7A1A] flex items-center justify-center mb-6">
+                            <div className="w-24 h-24 rounded-full bg-green-600 flex items-center justify-center mb-6">
                                 <Image
                                     src={step.icon}
                                     alt={step.title}

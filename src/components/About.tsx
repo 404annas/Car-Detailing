@@ -8,14 +8,14 @@ const About = () => {
 
                     {/* Left Content */}
                     <div className="space-y-6 max-w-xl">
-                        <span className="text-sm font-semibold text-orange-400 uppercase">
+                        <span className="text-sm font-semibold text-green-400 uppercase">
                             About Us
                         </span>
 
                         <h2 className="text-2xl md:text-3xl font-bold leading-none orb pt-4">
-                            BUILT ON <span className="text-orange-500">CAR PASSION</span>,
+                            BUILT ON <span className="text-green-500">CAR PASSION</span>,
                             <br />
-                            <span className="text-orange-500">FOCUSED</span> ON YOUR NEEDS
+                            <span className="text-green-500">FOCUSED</span> ON YOUR NEEDS
                         </h2>
 
                         <p className="text-gray-400 sm:text-base text-sm leading-normal">

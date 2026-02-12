@@ -19,7 +19,7 @@ const Cars = () => {
     ];
 
     return (
-        <section className="py-10 px-10 bg-white">
+        <section className="py-10 px-4 sm:px-10 bg-white">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {carData.map((car, index) => (
                     <div
@@ -29,7 +29,7 @@ const Cars = () => {
   p-6 transition-all duration-500 overflow-hidden`}
                     >
                         {/* Discount Badge */}
-                        <div className="absolute top-6 left-6 bg-orange-500 text-white px-4 py-1.5 rounded-full flex items-center gap-1 text-xs font-medium z-20">
+                        <div className="absolute top-6 left-6 bg-green-500 text-white px-4 py-1.5 rounded-full flex items-center gap-1 text-xs font-medium z-20">
                             <span className="bg-white/20 rounded-full p-0.5"><FaFire /></span>
                             Save Upto {car.discount}%
                         </div>
@@ -76,7 +76,7 @@ const Cars = () => {
                                 </div>
                             </div>
 
-                            <button className="flex items-center gap-2 text-black hover:text-orange-500 transition-all duration-300 font-extrabold text-sm pt-2 group/btn orb cursor-pointer">
+                            <button className="flex items-center gap-2 text-black hover:text-green-500 transition-all duration-300 font-extrabold text-sm pt-2 group/btn orb cursor-pointer">
                                 Book Now
                                 <ArrowUpRight
                                     size={18}

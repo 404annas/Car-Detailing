@@ -45,13 +45,33 @@ const StepCards: React.FC = () => {
 
                 {/* Main Title with the orange line */}
                 <div className="relative inline-block mb-16">
-                    <h2 className="text-4xl md:text-5xl orb font-extrabold text-black">
+                    <h2 className="text-4xl md:text-5xl leading-none orb font-extrabold text-black">
                         Booking car hire in three <br className="hidden md:block" />
                         simple <span className="relative">steps</span>
                     </h2>
                     {/* Line image positioning */}
                     <div className="absolute -bottom-6 right-0 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:right-35">
-                        <Image src={line.src} alt="line" width={200} height={10} />
+                        <svg
+                            width="180"
+                            height="30"
+                            viewBox="0 0 180 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M5 15 C30 10, 60 18, 90 14 C120 10, 150 18, 175 13"
+                                stroke="#22c55e"
+                                stroke-width="5"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                d="M10 22 C40 18, 70 25, 100 20 C130 17, 155 22, 170 19"
+                                stroke="#22c55e"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                opacity="0.9"
+                            />
+                        </svg>
                     </div>
                 </div>
 
@@ -65,9 +85,9 @@ const StepCards: React.FC = () => {
                          hover:z-20 rounded-2xl flex flex-col items-center text-center cursor-pointer"
                         >
                             {/* Card Image */}
-                            <div className="mb-8 h-40 w-full relative flex items-center justify-center">
+                            <div className="mb-8 h-30 sm:h-40 w-full relative flex items-center justify-center">
                                 <img
-                                loading='lazy'
+                                    loading='lazy'
                                     src={step.image}
                                     alt={step.title}
                                     className="max-h-full object-cover"
@@ -75,7 +95,7 @@ const StepCards: React.FC = () => {
                             </div>
 
                             {/* Step Number */}
-                            <p className="text-orange-500 font-bold uppercase tracking-wider text-lg orb mb-2">
+                            <p className="text-green-600 font-bold uppercase tracking-wider text-lg orb mb-2">
                                 STEP {step.id}:
                             </p>
 

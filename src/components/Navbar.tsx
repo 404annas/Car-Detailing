@@ -26,14 +26,14 @@ const Navbar = () => {
 
                 <div className="hidden lg:flex items-center gap-10">
                     {menuItems.map((item) => (
-                        <p key={item} className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-orange-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-500 hover:after:w-full">
+                        <p key={item} className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-green-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-green-500 after:transition-all after:duration-500 hover:after:w-full">
                             {item}
                         </p>
                     ))}
                 </div>
 
-                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-orange-500 px-6 py-3 cursor-pointer group">
-                    <span className="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full" />
+                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-green-500 px-6 py-3 cursor-pointer group">
+                    <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
                     <div className="relative z-10 flex items-center gap-2 orb font-medium">
                         <p>Contact Us</p>
                         <Contact2 size={22} />
@@ -54,12 +54,12 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-col gap-6 px-6 py-10 text-white text-lg">
                     {menuItems.map((item) => (
-                        <p key={item} className="cursor-pointer hover:text-orange-500 transition-colors">{item}</p>
+                        <p key={item} className="cursor-pointer hover:text-green-500 transition-colors">{item}</p>
                     ))}
                 </div>
                 <div className="absolute bottom-8 left-6 right-6">
-                    <div className="relative overflow-hidden rounded-lg border border-orange-500 px-6 py-4 cursor-pointer group">
-                        <span className="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full" />
+                    <div className="relative overflow-hidden rounded-lg border border-green-500 px-6 py-4 cursor-pointer group">
+                        <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
                         <div className="relative z-10 flex items-center justify-center gap-2 text-white orb font-medium">
                             <p>Contact Us</p>
                             <Contact2 size={22} />

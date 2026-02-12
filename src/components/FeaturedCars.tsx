@@ -6,7 +6,8 @@ import {
     Gauge,
     Fuel,
     Settings,
-    Cog
+    Cog,
+    Key
 } from "lucide-react"
 
 // ... (Keep your existing image imports here)
@@ -41,253 +42,233 @@ import car17 from "@/assets/car17.avif"
 import car18 from "@/assets/car18.avif"
 import car19 from "@/assets/car19.avif"
 
-// ... (Keep your cars array exactly as it is)
 const cars = [
     {
-        name: "Lamborghini Urus",
-        meta: "2024 • SUV • New",
+        name: "Toyota Prius 2011",
+        meta: "3 Years Warranty Included",
         img: lamboMain,
         image: car1,
         price: "USD $14,500",
         specs: [
-            { icon: Gauge, label: "150" },
-            { icon: Cog, label: "4.0L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Auto" },
+            { icon: Gauge, label: "64,000 km" },
+            { icon: Cog, label: "1.8L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Audi R8",
-        meta: "2023 • Convertible • New",
+        name: "Toyota Crown Sedan 2010",
+        meta: "1 Year warranty for peace of mind",
         img: audiMain,
         image: car2,
         price: "USD $17,500",
         specs: [
-            { icon: Gauge, label: "90" },
-            { icon: Cog, label: "5.2L" },
-            { icon: Fuel, label: "Diesel" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "89,000 km" },
+            { icon: Cog, label: "3.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Ferrari 458 Italia",
-        meta: "2019 • Coupe • Used",
+        name: "Honda Vezel 2014",
+        meta: "5 years warranty",
         img: ferrariMain,
         image: car3,
         price: "USD $16,500",
         specs: [
-            { icon: Gauge, label: "15,200" },
+            { icon: Gauge, label: "99 km" },
             { icon: Cog, label: "4.5L" },
-            { icon: Fuel, label: "Hybrid" },
-            { icon: Settings, label: "Manual" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "BMW X6 F86",
-        meta: "2024 • SUV • New",
+        name: "LEXUS LS460 V8 2012",
+        meta: "3 Years warranty",
         img: bmwMain,
         image: car4,
         price: "USD $24, 999",
         specs: [
-            { icon: Gauge, label: "120" },
-            { icon: Cog, label: "4.4L" },
-            { icon: Fuel, label: "Diesel" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "93 km" },
+            { icon: Cog, label: "4.6L" },
+            { icon: Settings, label: "AWD" },
         ],
     },
     {
-        name: "Ferrari 488 GTB",
-        meta: "2021 • Coupe • Used",
+        name: "Lexus LS460 2006, V8 Luxury",
+        meta: "5 Years Warranty",
         img: ferrariMain,
         image: car5,
         price: "USD $34,500",
         specs: [
-            { icon: Gauge, label: "8,700" },
-            { icon: Cog, label: "3.9L" },
-            { icon: Fuel, label: "Hybrid" },
-            { icon: Settings, label: "Auto" },
+            { icon: Gauge, label: "135,000 km" },
+            { icon: Cog, label: "4.6L" },
+            { icon: Settings, label: "Automatic" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Mitsubishi Lancer Evolution 2007",
+        meta: "5 years mechanical warranty ",
         img: lamboMain,
         image: car6,
         price: "USD $32,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "50,200 km" },
+            { icon: Cog, label: "2.0L" },
+            { icon: Settings, label: "Dual-Clutch" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Lexus LS460 V8 2007",
+        meta: "3 Years warranty",
         img: lamboMain,
         image: car7,
         price: "USD $16,900",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "154,000 km" },
+            { icon: Cog, label: "4.6L" },
+            { icon: Settings, label: "Automatic" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Toyota C-HR Hybrid G Mode-Nero",
+        meta: "6-Month Warranty",
         img: lamboMain,
         image: car8,
         price: "USD $26,500",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "60,000 km" },
+            { icon: Cog, label: "1.8L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Mercedes-Benz S400h Hybrid",
+        meta: "1 year warranty",
         img: lamboMain,
         image: car9,
         price: "USD $28,500",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "40,000 km" },
+            { icon: Cog, label: "3.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Honda Grace Hybrid EX 2015",
+        meta: "1 Year Rego & Ctp",
         img: lamboMain,
         image: car10,
         price: "USD $16,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "43,000 km" },
+            { icon: Cog, label: "1.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Toyota Yaris Hybrid G AWD 2020",
+        meta: "1 Year Rego + CTP Included",
         img: lamboMain,
         image: car11,
         price: "USD $18,500",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "100,000 km" },
+            { icon: Cog, label: "4.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Lexus LS460 V8 RWD 2013",
+        meta: "4 years warranty",
         img: lamboMain,
         image: car12,
         price: "USD $26,800",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "80,000 km" },
+            { icon: Cog, label: "4.6L" },
+            { icon: Settings, label: "Automatic" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Honda Fit Hybrid eHEV Hatchback",
+        meta: "Warranty",
         img: lamboMain,
         image: car13,
         price: "USD $23,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "100 km" },
+            { icon: Cog, label: "3.0L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Suzuki Swift Hybrid Hatchback",
+        meta: "Warranty",
         img: lamboMain,
         image: car14,
         price: "USD $18,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "40,000 km" },
+            { icon: Cog, label: "1.2L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Honda Fit Hybrid 2018",
+        meta: "Warranty",
         img: lamboMain,
         image: car15,
         price: "USD $18,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "100 km" },
+            { icon: Cog, label: "1.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Toyota Crown RS Advance 2019",
+        meta: "Warranty",
         img: lamboMain,
         image: car16,
         price: "USD $39,999",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "40,000 km" },
+            { icon: Cog, label: "2.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Lexus LS460 V8 RWD 2007",
+        meta: "Warranty",
         img: lamboMain,
         image: car17,
         price: "USD $25,999",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "200,000 km" },
+            { icon: Cog, label: "4.6L" },
+            { icon: Settings, label: "Automatic" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Honda Vezel Hybrid 2014",
+        meta: "Warranty",
         img: lamboMain,
         image: car18,
         price: "USD $17,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "60,000 km" },
+            { icon: Cog, label: "1.5L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
     {
-        name: "Lambo Aventador",
-        meta: "2022 • Convertible • Used",
+        name: "Toyota C-HR Hybrid 2018",
+        meta: "Warranty",
         img: lamboMain,
         image: car19,
         price: "USD $26,000",
         specs: [
-            { icon: Gauge, label: "12,500" },
-            { icon: Cog, label: "6.5L" },
-            { icon: Fuel, label: "Petrol" },
-            { icon: Settings, label: "Manual" },
+            { icon: Gauge, label: "50,000 km" },
+            { icon: Cog, label: "1.8L" },
+            { icon: Settings, label: "Hybrid" },
         ],
     },
 ]
@@ -311,7 +292,7 @@ const FeaturedCars = () => {
                 <button
                     // 5. Add onClick handler
                     onClick={() => setShowAll(!showAll)}
-                    className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
+                    className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
                 >
                     {/* 6. Dynamic Text */}
                     {showAll ? "SHOW LESS" : "SHOW ALL"}
@@ -356,7 +337,7 @@ const FeaturedCars = () => {
 
                         {/* Specs */}
                         <div className="bg-[#0B1324] text-white rounded-xl p-3 space-y-4">
-                            <div className="grid grid-cols-4 gap-4 text-center text-xs sm:text-sm border border-orange-500 rounded-xl py-3 px-1">
+                            <div className="grid grid-cols-3 gap-4 text-center text-xs sm:text-sm border border-green-500 rounded-xl py-3 pl-2 pr-1">
                                 {car.specs.map((spec, i) => {
                                     const Icon = spec.icon
                                     return (
@@ -372,7 +353,7 @@ const FeaturedCars = () => {
                             <p className="text-xl orb font-semibold">{car.price}</p>
 
                             {/* Button */}
-                            <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-medium hover:bg-orange-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
+                            <button className="w-full bg-green-500 text-white py-3 rounded-xl font-medium hover:bg-green-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
                                 SEE DETAILS
                             </button>
                         </div>

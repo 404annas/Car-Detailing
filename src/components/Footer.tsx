@@ -32,18 +32,18 @@ const Footer = () => {
 
                     {/* Left Text */}
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-none max-w-2xl orb">
-                        PORSCHE CAYENNE <span className="text-orange-500">BLACK EDITION</span>.
+                        PORSCHE CAYENNE <span className="text-green-500">BLACK EDITION</span>.
                         <br />
-                        ELEGANCE AND <span className="text-orange-500">SPORTINESS</span>.
+                        ELEGANCE AND <span className="text-green-500">SPORTINESS</span>.
                     </h2>
 
                     {/* Navigation Links */}
                     <div className="flex flex-col gap-4 lg:items-end text-sm">
-                        <a className="hover:text-orange-400 transition-all duration-300 cursor-pointer">Home</a>
-                        <a className="hover:text-orange-400 transition-all duration-300 cursor-pointer">Models</a>
-                        <a className="hover:text-orange-400 transition-all duration-300 cursor-pointer">Experience</a>
-                        <a className="hover:text-orange-400 transition-all duration-300 cursor-pointer">Services</a>
-                        <a className="hover:text-orange-400 transition-all duration-300 cursor-pointer">Contact</a>
+                        <a className="hover:text-green-400 transition-all duration-300 cursor-pointer">Home</a>
+                        <a className="hover:text-green-400 transition-all duration-300 cursor-pointer">Models</a>
+                        <a className="hover:text-green-400 transition-all duration-300 cursor-pointer">Experience</a>
+                        <a className="hover:text-green-400 transition-all duration-300 cursor-pointer">Services</a>
+                        <a className="hover:text-green-400 transition-all duration-300 cursor-pointer">Contact</a>
                     </div>
                 </div>
 
@@ -59,11 +59,11 @@ const Footer = () => {
 
                     {/* Social Icons */}
                     <div className="flex items-center gap-6">
-                        <Facebook className="w-5 h-5 cursor-pointer hover:text-orange-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Instagram className="w-5 h-5 cursor-pointer hover:text-orange-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Twitter className="w-5 h-5 cursor-pointer hover:text-orange-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Youtube className="w-5 h-5 cursor-pointer hover:text-orange-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Linkedin className="w-5 h-5 cursor-pointer hover:text-orange-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Facebook className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Instagram className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Twitter className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Youtube className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Linkedin className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
                     </div>
 
                     {/* Copyright */}
