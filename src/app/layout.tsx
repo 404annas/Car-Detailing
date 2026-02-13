@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Orbitron } from "next/font/google";
 import "./globals.css";
+import PreLoader from "@/components/PreLoader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${orbitron.variable} antialiased`}
       >
+        <PreLoader />
         {children}
       </body>
     </html>

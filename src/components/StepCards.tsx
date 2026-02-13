@@ -39,18 +39,18 @@ const StepCards: React.FC = () => {
         <section className="py-10 px-4">
             <div className="max-w-6xl mx-auto text-center">
                 {/* Top small heading */}
-                <p className="text-sm font-bold tracking-widest text-gray-800 uppercase mb-2">
+                <p className="text-sm font-bold orb tracking-widest text-green-500 uppercase mb-2">
                     how do i rent a car?
                 </p>
 
                 {/* Main Title with the orange line */}
                 <div className="relative inline-block mb-16">
-                    <h2 className="text-4xl md:text-5xl leading-none orb font-extrabold text-black">
+                    <h2 className="text-4xl md:text-5xl uppercase leading-none orb font-extrabold text-black">
                         Booking car hire in three <br className="hidden md:block" />
                         simple <span className="relative">steps</span>
                     </h2>
                     {/* Line image positioning */}
-                    <div className="absolute -bottom-6 right-0 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:right-35">
+                    <div className="absolute -bottom-6 right-0 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:right-50">
                         <svg
                             width="180"
                             height="30"
