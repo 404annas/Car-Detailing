@@ -4,23 +4,25 @@ import React from 'react';
 import { ArrowUpRight, Gauge, DollarSign } from 'lucide-react';
 import carBack from '@/assets/carBack.png';
 
-import cardCard1 from "@/assets/carCard1.png"
-import cardCard2 from "@/assets/carCard2.png"
-import cardCard3 from "@/assets/carCard3.png"
-import cardCard4 from "@/assets/carCard4.png"
+import cardCard1 from "@/assets/carGif1.gif"
+import cardCard2 from "@/assets/carGif2.gif"
+import cardCard3 from "@/assets/carGif3.gif"
+import cardCard4 from "@/assets/carGif4.gif"
+import cardCard5 from "@/assets/carGif5.gif"
 import { FaFire } from 'react-icons/fa';
 
 const Cars = () => {
     const carData = [
-        { name: "Volvo XC90", price: "10", km: "80", color: "bg-[#F7F7E8]", img: cardCard1.src, discount: "15" },
-        { name: "Mercedes Benz GLK", price: "12", km: "80", color: "bg-[#FEECEC]", img: cardCard2.src, discount: "20" },
-        { name: "Audi A1 S-LINE", price: "16", km: "80", color: "bg-[#ECF0FF]", img: cardCard3.src, discount: "15" },
-        { name: "BMW 320i Modern Line", price: "13", km: "80", color: "bg-[#F2F2F2]", img: cardCard4.src, discount: "15" },
+        { name: "Only certified motors", price: "10", km: "80", color: "bg-green-100", img: cardCard1.src, discount: "15" },
+        { name: "7 days free trial", price: "12", km: "80", color: "bg-red-100", img: cardCard2.src, discount: "20" },
+        { name: "Free delivery", price: "16", km: "80", color: "bg-yellow-100", img: cardCard3.src, discount: "15" },
+        { name: "Free test drives", price: "13", km: "80", color: "bg-purple-100", img: cardCard4.src, discount: "15" },
+        { name: "Pre-approval", price: "13", km: "80", color: "bg-blue-100", img: cardCard5.src, discount: "15" },
     ];
 
     return (
         <section className="py-10 px-4 sm:px-10 bg-white">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
                 {carData.map((car, index) => (
                     <div
                         key={index}
@@ -29,9 +31,9 @@ const Cars = () => {
   p-6 transition-all duration-500 overflow-hidden`}
                     >
                         {/* Discount Badge */}
-                        <div className="absolute top-6 left-6 bg-green-500 text-white px-4 py-1.5 rounded-full flex items-center gap-1 text-xs font-medium z-20">
+                        <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-1.5 rounded-full flex items-center gap-1 text-xs font-medium z-20">
                             <span className="bg-white/20 rounded-full p-0.5"><FaFire /></span>
-                            Save Upto {car.discount}%
+                            Why Elite Motors ?
                         </div>
                         <img
                             loading="lazy"
@@ -48,7 +50,7 @@ const Cars = () => {
 
                         {/* Car Image */}
                         {/* Hover par ye scale down (choti) hogi */}
-                        <div className="relative h-48 mt-4 flex items-center justify-center z-10">
+                        <div className="relative h-44 mt-4 flex items-center justify-center z-10">
                             <img
                                 loading='lazy'
                                 src={car.img}
@@ -59,11 +61,11 @@ const Cars = () => {
 
                         {/* Content */}
                         <div className="mt-4 space-y-3">
-                            <h3 className="text-base orb font-bold text-gray-900 leading-none">
+                            <h3 className="text-sm orb font-bold text-gray-900 leading-none">
                                 {car.name}
                             </h3>
 
-                            <div className="flex items-center gap-6 text-gray-600 font-bold text-sm">
+                            {/* <div className="flex items-center gap-6 text-gray-600 font-bold text-sm">
                                 <div className="flex items-center gap-2 orb">
                                     <Gauge size={20} className="text-gray-500" />
                                     <span>{car.km} km</span>
@@ -74,10 +76,10 @@ const Cars = () => {
                                     </div>
                                     <span>${car.price}/hr</span>
                                 </div>
-                            </div>
+                            </div> */}
 
-                            <button className="flex items-center gap-2 text-black hover:text-green-500 transition-all duration-300 font-extrabold text-sm pt-2 group/btn orb cursor-pointer">
-                                Book Now
+                            <button className="flex items-center gap-2 text-black hover:text-green-500 transition-all duration-300 font-extrabold text-xs pt-2 group/btn orb cursor-pointer">
+                                Contact Us
                                 <ArrowUpRight
                                     size={18}
                                     className="transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"

@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Cars from '@/components/Cars'
+import Contact from '@/components/Contact'
 import FeaturedCars from '@/components/FeaturedCars'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
@@ -21,6 +22,7 @@ const Home = () => {
         <FeaturedCars />
         <Steps />
         <Testimonials />
+        <Contact />
         <Footer />
     </div>
   )
