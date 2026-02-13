@@ -58,12 +58,12 @@ const Hero2 = () => {
 
                 {/* LEFT CONTENT */}
                 <div className="text-white w-full max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl orb font-extrabold leading-none lg:leading-none">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl orb font-bold leading-none">
                         Looking to hire <br />
                         <span className="relative inline-block mt-2 lg:mt-0">
                             a vehicle?
                             <svg
-                                width="400"
+                                width="300"
                                 height="30"
                                 viewBox="0 0 180 20"
                                 fill="none"

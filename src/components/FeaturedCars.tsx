@@ -321,7 +321,7 @@ const FeaturedCars = () => {
                                 />
                             </div>
                             <div>
-                                <h3 className="font-semibold orb">{car.name}</h3>
+                                <h3 className="font-semibold orb text-lg">{car.name}</h3>
                                 <p className="text-sm text-gray-600">{car.meta}</p>
                             </div>
                         </div>

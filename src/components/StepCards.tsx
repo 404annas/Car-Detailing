@@ -50,7 +50,7 @@ const StepCards: React.FC = () => {
                         simple <span className="relative">steps</span>
                     </h2>
                     {/* Line image positioning */}
-                    <div className="absolute -bottom-6 right-0 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:right-50">
+                    <div className="absolute -bottom-6 right-0 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:right-35">
                         <svg
                             width="180"
                             height="30"

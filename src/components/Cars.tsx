@@ -14,7 +14,7 @@ import { FaFire } from 'react-icons/fa';
 
 const Cars = () => {
     const carData = [
-        { name: "Mercedes Benz", price: "10", km: "80", color: "bg-green-100", anoColor: "bg-green-200", img: cardCard1.src, discount: "15" },
+        { name: "Mercedes", price: "10", km: "80", color: "bg-green-100", anoColor: "bg-green-200", img: cardCard1.src, discount: "15" },
         { name: "Toyota", price: "12", km: "80", color: "bg-red-100", anoColor:"bg-red-200", img: cardCard2.src, discount: "20" },
         { name: "Lexus", price: "16", km: "80", color: "bg-yellow-100", anoColor:"bg-yellow-200", img: cardCard3.src, discount: "15" },
         { name: "Mitsubushi", price: "13", km: "80", color: "bg-purple-100", anoColor:"bg-purple-200", img: cardCard4.src, discount: "15" },
@@ -43,7 +43,7 @@ const Cars = () => {
                                 className="w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-90"
                             />
                         </div>
-                        <h1 className={`orb ${car.anoColor} px-4 py-2 text-xs text-center mt-2 rounded-full font-medium`}>{car.name}</h1>
+                        <h1 className={`orb ${car.anoColor} px-4 py-2 text-sm text-center mt-2 rounded-full font-medium`}>{car.name}</h1>
                     </div>
                 ))}
             </div>
