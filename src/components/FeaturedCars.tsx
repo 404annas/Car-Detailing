@@ -2,6 +2,7 @@
 
 import { useState } from "react" // 2. Import useState
 import Image from "next/image"
+import Link from "next/link"
 import {
     Gauge,
     Fuel,
@@ -46,7 +47,7 @@ const cars = [
     {
         name: "Toyota Prius 2011",
         meta: "3 Years Warranty Included",
-        img: lamboMain,
+        img: car1,
         image: car1,
         price: "USD $14,500",
         specs: [
@@ -58,7 +59,7 @@ const cars = [
     {
         name: "Toyota Crown Sedan 2010",
         meta: "1 Year warranty for peace of mind",
-        img: audiMain,
+        img: car2,
         image: car2,
         price: "USD $17,500",
         specs: [
@@ -70,7 +71,7 @@ const cars = [
     {
         name: "Honda Vezel 2014",
         meta: "5 years warranty",
-        img: ferrariMain,
+        img: car3,
         image: car3,
         price: "USD $16,500",
         specs: [
@@ -82,7 +83,7 @@ const cars = [
     {
         name: "LEXUS LS460 V8 2012",
         meta: "3 Years warranty",
-        img: bmwMain,
+        img: car4,
         image: car4,
         price: "USD $24, 999",
         specs: [
@@ -94,7 +95,7 @@ const cars = [
     {
         name: "Lexus LS460 2006, V8 Luxury",
         meta: "5 Years Warranty",
-        img: ferrariMain,
+        img: car5,
         image: car5,
         price: "USD $34,500",
         specs: [
@@ -106,7 +107,7 @@ const cars = [
     {
         name: "Mitsubishi Lancer Evolution 2007",
         meta: "5 years mechanical warranty ",
-        img: lamboMain,
+        img: car6,
         image: car6,
         price: "USD $32,000",
         specs: [
@@ -118,7 +119,7 @@ const cars = [
     {
         name: "Lexus LS460 V8 2007",
         meta: "3 Years warranty",
-        img: lamboMain,
+        img: car7,
         image: car7,
         price: "USD $16,900",
         specs: [
@@ -130,7 +131,7 @@ const cars = [
     {
         name: "Toyota C-HR Hybrid G Mode-Nero",
         meta: "6-Month Warranty",
-        img: lamboMain,
+        img: car8,
         image: car8,
         price: "USD $26,500",
         specs: [
@@ -142,7 +143,7 @@ const cars = [
     {
         name: "Mercedes-Benz S400h Hybrid",
         meta: "1 year warranty",
-        img: lamboMain,
+        img: car9,
         image: car9,
         price: "USD $28,500",
         specs: [
@@ -154,7 +155,7 @@ const cars = [
     {
         name: "Honda Grace Hybrid EX 2015",
         meta: "1 Year Rego & Ctp",
-        img: lamboMain,
+        img: car10,
         image: car10,
         price: "USD $16,000",
         specs: [
@@ -166,7 +167,7 @@ const cars = [
     {
         name: "Toyota Yaris Hybrid G AWD 2020",
         meta: "1 Year Rego + CTP Included",
-        img: lamboMain,
+        img: car11,
         image: car11,
         price: "USD $18,500",
         specs: [
@@ -178,7 +179,7 @@ const cars = [
     {
         name: "Lexus LS460 V8 RWD 2013",
         meta: "4 years warranty",
-        img: lamboMain,
+        img: car12,
         image: car12,
         price: "USD $26,800",
         specs: [
@@ -190,7 +191,7 @@ const cars = [
     {
         name: "Honda Fit Hybrid eHEV Hatchback",
         meta: "Warranty",
-        img: lamboMain,
+        img: car13,
         image: car13,
         price: "USD $23,000",
         specs: [
@@ -202,7 +203,7 @@ const cars = [
     {
         name: "Suzuki Swift Hybrid Hatchback",
         meta: "Warranty",
-        img: lamboMain,
+        img: car14,
         image: car14,
         price: "USD $18,000",
         specs: [
@@ -214,7 +215,7 @@ const cars = [
     {
         name: "Honda Fit Hybrid 2018",
         meta: "Warranty",
-        img: lamboMain,
+        img: car15,
         image: car15,
         price: "USD $18,000",
         specs: [
@@ -226,7 +227,7 @@ const cars = [
     {
         name: "Toyota Crown RS Advance 2019",
         meta: "Warranty",
-        img: lamboMain,
+        img: car16,
         image: car16,
         price: "USD $39,999",
         specs: [
@@ -238,7 +239,7 @@ const cars = [
     {
         name: "Lexus LS460 V8 RWD 2007",
         meta: "Warranty",
-        img: lamboMain,
+        img: car17,
         image: car17,
         price: "USD $25,999",
         specs: [
@@ -250,7 +251,7 @@ const cars = [
     {
         name: "Honda Vezel Hybrid 2014",
         meta: "Warranty",
-        img: lamboMain,
+        img: car18,
         image: car18,
         price: "USD $17,000",
         specs: [
@@ -262,7 +263,7 @@ const cars = [
     {
         name: "Toyota C-HR Hybrid 2018",
         meta: "Warranty",
-        img: lamboMain,
+        img: car19,
         image: car19,
         price: "USD $26,000",
         specs: [
@@ -313,9 +314,10 @@ const FeaturedCars = () => {
                                 <Image
                                     src={car.img}
                                     alt={car.name}
-                                    width={100}
-                                    height={100}
-                                    className="object-contain"
+                                    fill
+                                    // width={500}
+                                    // height={500}
+                                    className="object-cover object-center"
                                 />
                             </div>
                             <div>
@@ -353,9 +355,11 @@ const FeaturedCars = () => {
                             <p className="text-xl orb font-semibold">{car.price}</p>
 
                             {/* Button */}
-                            <button className="w-full bg-green-500 text-white py-3 rounded-xl font-medium hover:bg-green-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
-                                SEE DETAILS
-                            </button>
+                            <Link href={`/cars/${index}`}>
+                                <button className="w-full bg-green-500 text-white py-3 rounded-xl font-medium hover:bg-green-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
+                                    SEE DETAILS
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 ))}

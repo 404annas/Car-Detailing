@@ -68,6 +68,7 @@ const Hero2 = () => {
                                 viewBox="0 0 180 20"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
+                                className="-mt-4"
                             >
                                 <path
                                     d="M5 15 C30 10, 60 18, 90 14 C120 10, 150 18, 175 13"
