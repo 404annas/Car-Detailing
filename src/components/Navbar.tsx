@@ -2,6 +2,10 @@
 import { useEffect, useState } from "react"
 import { Contact2, Menu, X } from "lucide-react"
 
+import logo from "@/assets/logo.svg"
+import Image from "next/image"
+import Link from "next/link"
+
 const menuItems = ["Home", "About", "Our Fleet", "Cars", "Services"]
 
 const Navbar = () => {
@@ -21,8 +25,11 @@ const Navbar = () => {
     return (
         <>
             {/* Navbar is now RELATIVE and has a BG color */}
-            <nav className="relative w-full z-50 px-6 lg:px-10 py-4 flex items-center justify-between text-white bg-[#0B1324]">
-                <h1 className="orb text-3xl lg:text-4xl font-bold">LOGO</h1>
+            <nav className="relative w-full z-50 px-6 lg:px-10 py-2 flex items-center justify-between text-white bg-[#0B1324]">
+                {/* <h1 className="orb text-3xl lg:text-4xl font-bold">LOGO</h1> */}
+                <Link href={"/"}>
+                    <Image width={2000} height={2000} alt="Elite Motor Cars Logo" className="w-20 rounded-full" src={logo} />
+                </Link>
 
                 <div className="hidden lg:flex items-center gap-10">
                     {menuItems.map((item) => (

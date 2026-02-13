@@ -8,48 +8,39 @@ import {
   Globe, 
   ShieldCheck, 
   CheckCircle2, 
-  Car 
+  Car, 
+  ArrowRight
 } from "lucide-react";
 
 const services = [
   {
     id: "01",
-    title: "Unrivalled Import Expertise (JDM, German & Italian)",
-    description: "We don’t just sell cars; we understand the culture behind them. We specialize in importing high-grade vehicles directly from Japan and Europe.",
-    // Points array handle karne ke liye
-    points: [
-      { label: "JDM Legends", text: "From cult classics to modern performance icons, we navigate the Japanese auction houses." },
-      { label: "Euro Prestige", text: "We curate the finest German engineering and Italian flair for hard-to-find specs." }
-    ],
+    title: "Unrivalled Import Expertise",
+    description: "We don’t just sell cars; we understand the culture behind.",
     icon: <Globe size={40} strokeWidth={1.5} />,
   },
   {
     id: "02",
     title: "Bespoke Global Sourcing Service",
-    description: "Can't find what you are looking for in Australia? Let us find it for you. Our 'Concierge Sourcing' service removes the stress of hunting for specific vehicles. You tell us your dream spec—make, model, year, colour, and budget—and we utilize our trusted global network to locate, inspect, and negotiate the best price for you. We handle the paperwork, compliance, and customs so you can focus on the drive.",
+    description: "Can't find what you are looking for in Australia?",
     icon: <Search size={40} strokeWidth={1.5} />,
   },
   {
     id: "03",
     title: "A Curated Selection of Local Favourites",
-    description: "While we love imports, we are deeply rooted in the Sydney community. We stock a wide range of high-quality local Australian-delivered vehicles. All our local stock undergoes the same rigorous quality inspections as our imports, ensuring that whether you are buying a daily commuter or a weekend cruiser.",
+    description: "While we love imports, we are deeply rooted in Sydney.",
     icon: <MapPin size={40} strokeWidth={1.5} />,
   },
   {
     id: "04",
-    title: "We Ship Australia-Wide",
-    description: "Based in Sydney, but serving the nation. We understand that the perfect car might not be in your postcode. Elite Motor Cars offers seamless logistics and shipping solutions to getting your new vehicle to your driveway, whether you live in Melbourne, Brisbane, Perth, or regional Australia.",
+    title: "We Do Ship Australia Wide",
+    description: "Based in Sydney, but serving the nation.",
     icon: <CarFront size={40} strokeWidth={1.5} />,
   },
   {
     id: "05",
     title: "Compliance & Quality You Can Trust",
-    description: "The grey import market can be navigating the unknown, but we make it transparent.",
-    points: [
-      { label: "Full Compliance", text: "We ensure all imported vehicles meet strict Australian Design Rules (ADR)." },
-      { label: "Rigorous Testing", text: "Every car is mechanically inspected and professionally detailed." },
-      { label: "Transparent History", text: "We provide clear vehicle history reports and auction sheets." }
-    ],
+    description: "The grey import market can be navigating the unknown.",
     icon: <ShieldCheck size={40} strokeWidth={1.5} />,
   },
 ];
@@ -77,12 +68,11 @@ const Offering = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
           {services.map((service, index) => (
             <div
               key={service.id}
               className={`group relative bg-[#161621] rounded-[30px] overflow-hidden border-b-[8px] border-green-500 transition-transform duration-300 hover:-translate-y-2 shadow-sm
-                ${index === 4 ? "md:col-span-2 md:max-w-3xl md:mx-auto w-full" : ""}
                 `}
             >
               {/* Geometric Background Effect */}
@@ -112,28 +102,15 @@ const Offering = () => {
                 </div>
 
                 {/* Text Content */}
-                <h3 className="text-green-500 orb text-xl font-bold mb-3 transition-colors group-hover:text-white duration-300">
+                <h3 className="text-green-500 orb text-base font-bold mb-3 transition-colors group-hover:text-white duration-300">
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-400 text-base font-medium leading-normal mb-4">
+                <p className="text-gray-400 text-sm font-medium leading-normal mb-4">
                   {service.description}
                 </p>
 
-                {/* Render Points if they exist (For Index 0 and 4) */}
-                {service.points && (
-                  <div className="space-y-3 mt-4 border-t border-gray-700 pt-4">
-                    {service.points.map((point, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <CheckCircle2 className="text-green-500 mt-1 shrink-0" size={18} />
-                        <p className="text-gray-300 text-sm">
-                          <strong className="text-white">{point.label}:</strong> {point.text}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
+                <button className="text-green-500 hover:underline hover:translate-y-1 transition-all duration-300 flex items-center gap-2 text-sm cursor-pointer">Read More <ArrowRight size={18}/></button>
               </div>
             </div>
           ))}
