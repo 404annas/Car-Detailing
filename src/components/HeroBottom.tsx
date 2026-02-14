@@ -17,7 +17,7 @@ const HeroBottom = () => {
   ];
 
   return (
-    <section className="bg-white pt-14 pb-10 w-full">
+    <section className="bg-white pt-12 pb-10 w-full">
       <div className="container mx-auto px-4 max-w-[1200px]">
 
         {/* Heading */}
