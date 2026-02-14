@@ -12,6 +12,18 @@ import {
   X
 } from "lucide-react";
 
+interface Service {
+  id: string;
+  title: string;
+  description: string;
+  fullDetails: string;
+  points: {
+    label: string;
+    text: string;
+  }[];
+  icon: React.ReactNode;
+};
+
 const services = [
   {
     id: "01",
@@ -73,7 +85,7 @@ const services = [
 ];
 
 const Offering = () => {
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
     <section className="py-10 bg-gray-50 relative">
