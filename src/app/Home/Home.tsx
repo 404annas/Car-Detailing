@@ -9,6 +9,8 @@ import FeaturedCars from '@/components/FeaturedCars'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Hero2 from '@/components/Hero2'
+import Hero3 from '@/components/Hero3';
+import HeroBottom from '@/components/HeroBottom';
 import Navbar from '@/components/Navbar'
 import Numbers from '@/components/Numbers'
 import Offering from '@/components/Offering'
@@ -22,8 +24,9 @@ const Home = () => {
         <Navbar />
         {/* <Hero /> */}
         <div id="home">
-          <Hero2 />
+          <Hero3 />
         </div>
+        <HeroBottom />
         {/* <About /> */}
         <div id="our-fleet">
           <Cars />
