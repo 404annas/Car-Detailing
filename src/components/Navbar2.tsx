@@ -9,7 +9,8 @@ import {
     Bell,
     Menu,
     User,
-    Filter
+    Filter,
+    PhoneCall
 } from "lucide-react";
 import logo from "@/assets/logo.svg";
 
@@ -66,7 +67,7 @@ const Navbar2 = () => {
                     </div>
 
                     <div className="relative cursor-pointer text-white p-1">
-                        <Bell size={24} />
+                        <PhoneCall size={24} />
                         <span className="absolute top-0 right-0 bg-[#E74C3C] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold border border-white">
                             4
                         </span>
