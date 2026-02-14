@@ -6,7 +6,16 @@ import logo from "@/assets/logo.svg"
 import Image from "next/image"
 import Link from "next/link"
 
-const menuItems = ["Home", "About", "Our Fleet", "Cars", "Services"]
+const menuItems = [
+  { name: "Home", href: "#home" },
+  { name: "Our Fleet", href: "#our-fleet" },
+  { name: "Choose Us", href: "#about" },
+  { name: "Process", href: "#process" },
+  { name: "Featured Cars", href: "#featured-cars" },
+  { name: "How We Work", href: "#how-it-works" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Faqs", href: "#faqs" },
+]
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -22,6 +31,24 @@ const Navbar = () => {
         }
     }, [open])
 
+    const handleClick = (href: string) => {
+        setOpen(false); // Close mobile menu if open
+        
+        // Handle internal anchor links
+        if (href.startsWith('#')) {
+            const element = document.querySelector(href);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Update URL without causing page reload
+                window.history.pushState(null, '', href);
+            }
+        }
+    }
+
     return (
         <>
             {/* Navbar is now RELATIVE and has a BG color */}
@@ -31,15 +58,19 @@ const Navbar = () => {
                     <Image width={2000} height={2000} alt="Elite Motor Cars Logo" className="w-20 rounded-full" src={logo} />
                 </Link>
 
-                <div className="hidden lg:flex items-center gap-10">
+                <div className="hidden lg:flex items-center gap-6">
                     {menuItems.map((item) => (
-                        <p key={item} className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-green-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-green-500 after:transition-all after:duration-500 hover:after:w-full">
-                            {item}
-                        </p>
+                        <button 
+                            key={item.name}
+                            onClick={() => handleClick(item.href)}
+                            className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-green-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-green-500 after:transition-all after:duration-500 hover:after:w-full"
+                        >
+                            {item.name}
+                        </button>
                     ))}
                 </div>
 
-                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-green-500 px-6 py-3 cursor-pointer group">
+                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-green-500 px-6 py-3 cursor-pointer group" onClick={() => handleClick("#contact")}>
                     <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
                     <div className="relative z-10 flex items-center gap-2 orb font-medium">
                         <p>Contact Us</p>
@@ -61,11 +92,20 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-col gap-6 px-6 py-10 text-white text-lg">
                     {menuItems.map((item) => (
-                        <p key={item} className="cursor-pointer hover:text-green-500 transition-colors">{item}</p>
+                        <button 
+                            key={item.name}
+                            onClick={() => handleClick(item.href)}
+                            className="cursor-pointer hover:text-green-500 transition-colors text-left"
+                        >
+                            {item.name}
+                        </button>
                     ))}
                 </div>
                 <div className="absolute bottom-8 left-6 right-6">
-                    <div className="relative overflow-hidden rounded-lg border border-green-500 px-6 py-4 cursor-pointer group">
+                    <div 
+                        className="relative overflow-hidden rounded-lg border border-green-500 px-6 py-4 cursor-pointer group"
+                        onClick={() => handleClick("#contact")}
+                    >
                         <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
                         <div className="relative z-10 flex items-center justify-center gap-2 text-white orb font-medium">
                             <p>Contact Us</p>

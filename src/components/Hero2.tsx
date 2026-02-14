@@ -5,9 +5,9 @@ import { GiJeep } from "react-icons/gi";
 import React, { useState, useEffect } from "react";
 import { TbCarSuv } from "react-icons/tb";
 
-import heroMainImg1 from "@/assets/heroCarMain1.jpg"
-import heroMainImg2 from "@/assets/heroCarMain2.jpg"
-import heroMainImg3 from "@/assets/heroCarMain3.jpg"
+import heroMainImg1 from "@/assets/heroMain2.avif"
+import heroMainImg2 from "@/assets/heroMain3.avif"
+import heroMainImg3 from "@/assets/heroMain5.avif"
 
 import underlineImg from "@/assets/line.png";
 
@@ -58,12 +58,12 @@ const Hero2 = () => {
 
                 {/* LEFT CONTENT */}
                 <div className="text-white w-full max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl orb font-bold leading-none">
-                        Looking to hire <br />
-                        <span className="relative inline-block mt-2 lg:mt-0">
-                            a vehicle?
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl orb font-bold leading-none">
+                        Drive Excellence.<br />
+                        <span className="relative inline-block text-[#22C55E] mt-2 lg:mt-0">
+                            Own Pure Performance.
                             <svg
-                                width="300"
+                                width="750"
                                 height="30"
                                 viewBox="0 0 180 20"
                                 fill="none"
@@ -87,15 +87,13 @@ const Hero2 = () => {
                         </span>
                     </h1>
 
-                    <p className="text-lg sm:text-xl lg:text-2xl font-medium orb mt-10 sm:mt-14">
-                        You've come to the right place.
-                    </p>
+                    <p className="text-lg leading-normal font-medium">At Elite Motor Cars, value means access, peace of mind, and simplicity. Whether it's a luxury European model or a specialized import, we handle the risks and complexities so you don’t have to.</p>
 
-                    <ul className="mt-8 space-y-3 text-base sm:text-lg font-semibold inline-block lg:block text-left">
+                    <ul className="mt-8 space-y-3 text-sm sm:text-base font-semibold inline-block lg:block text-left">
                         {[
-                            "Free cancellations on most bookings",
-                            "60,000+ locations",
-                            "Customer support in 30+ languages",
+                            "Expert sourcing of luxury & imported vehicles",
+                            "Trusted guidance every step of the way",
+                            "Quality you can drive with confidence",
                         ].map((text) => (
                             <li key={text} className="flex items-start sm:items-center gap-3">
                                 <span className="text-green-500 text-xl mt-1 sm:mt-0"><Check /></span>

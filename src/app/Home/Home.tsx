@@ -1,7 +1,10 @@
+"use client";
+
 import About from '@/components/About'
 import BgSteps from '@/components/BgSteps'
 import Cars from '@/components/Cars'
 import Contact from '@/components/Contact'
+import Faqs from '@/components/Faqs';
 import FeaturedCars from '@/components/FeaturedCars'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
@@ -18,17 +21,40 @@ const Home = () => {
     <div>
         <Navbar />
         {/* <Hero /> */}
-        <Hero2 />
+        <div id="home">
+          <Hero2 />
+        </div>
         {/* <About /> */}
-        <Cars />
-        <Offering />
-        <StepCards />
-        <BgSteps />
-        <FeaturedCars />
-        <Numbers />
-        <Steps />
-        <Testimonials />
-        <Contact />
+        <div id="our-fleet">
+          <Cars />
+        </div>
+        <div id="about">
+          <Offering />
+        </div>
+        <div id="process">
+          <StepCards />
+        </div>
+        <div id="steps">
+          <BgSteps />
+        </div>
+        <div id="featured-cars">
+          <FeaturedCars />
+        </div>
+        <div id="numbers">
+          <Numbers />
+        </div>
+        <div id="how-it-works">
+          <Steps />
+        </div>
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+        <div id="faqs">
+          <Faqs />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
     </div>
   )

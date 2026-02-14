@@ -126,7 +126,7 @@ const Offering = () => {
               </div>
 
               {/* Content */}
-              <div className="relative p-6 pt-10 pb-10">
+              <div className="relative p-6 pt-8 pb-6">
                 <div className="text-green-500 mb-10 relative z-10 inline-block">
                   <div className="absolute -left-3 -top-3 w-[64px] h-[64px] rounded-full border border-dashed border-green-500/50 animate-spin-slow"></div>
                   <div className="relative z-10">{service.icon}</div>
