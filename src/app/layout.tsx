@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Orbitron, Inter_Tight } from "next/font/google";
 import "./globals.css";
-import PreLoader from "@/components/PreLoader";
+import { Toaster } from 'sonner';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,8 +40,21 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${orbitron.variable} antialiased`}
       >
-        <PreLoader />
         {children}
+        <Toaster 
+          position="bottom-right"
+          richColors={true}
+          closeButton={true}
+          toastOptions={{
+            style: {
+              background: '#fff',
+              border: '1px solid #e5e7eb',
+              borderRadius: '0.75rem',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            },
+            className: 'font-medium',
+          }}
+        />
       </body>
     </html>
   );

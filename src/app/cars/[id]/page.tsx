@@ -17,6 +17,7 @@ import {
   ChevronRight,
   Star
 } from "lucide-react";
+import { toast } from 'sonner';
 
 // Import the data
 import { allCars } from "@/data/cars"; // Adjust path if you put the folder elsewhere
@@ -185,7 +186,35 @@ const CarDetailsPage = () => {
                 <button className="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg shadow-lg shadow-green-200 transition-all duration-300 active:scale-95 flex justify-center items-center gap-2 cursor-pointer">
                   Reserve Now
                 </button>
-                <button className="flex-1 bg-white border-2 border-gray-200 hover:border-green-500 hover:text-green-600 text-gray-700 font-bold py-4 rounded-lg transition-all duration-300 active:scale-95 flex justify-center items-center gap-2 cursor-pointer">
+                <button 
+                  onClick={() => {
+                    // Get existing cart items from localStorage or initialize empty array
+                    const existingCart = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('cart') || '[]') : [];
+                    
+                    // Check if the car is already in the cart
+                    const carExists = existingCart.some((item: any) => item.id === carData.id);
+                    
+                    if (!carExists) {
+                      // Add the car to the cart
+                      const updatedCart = [...existingCart, carData];
+                      
+                      // Save updated cart to localStorage
+                      if (typeof window !== 'undefined') {
+                        localStorage.setItem('cart', JSON.stringify(updatedCart));
+                      }
+                      
+                      toast.success(`${carData.name} has been added to your cart!`, {
+                        action: {
+                          label: 'Go to Cart',
+                          onClick: () => window.location.href = '/cart',
+                        },
+                      });
+                    } else {
+                      toast.error(`${carData.name} is already in your cart.`);
+                    }
+                  }}
+                  className="flex-1 bg-white border-2 border-gray-200 hover:border-green-500 hover:text-green-600 text-gray-700 font-bold py-4 rounded-lg transition-all duration-300 active:scale-95 flex justify-center items-center gap-2 cursor-pointer"
+                >
                   <ShoppingCart size={20} />
                   Add to Cart
                 </button>

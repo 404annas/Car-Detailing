@@ -2,10 +2,12 @@
 
 import Home from "@/app/Home/Home"
 import NextTopLoader from "nextjs-toploader"
+import PreLoader from "@/components/PreLoader"
 
 const page = () => {
   return (
     <div>
+      <PreLoader />
       <NextTopLoader
         color="#00A63E"
         initialPosition={0.08}
