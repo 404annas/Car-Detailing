@@ -10,11 +10,11 @@ const Hero3 = () => {
             <div className="w-full flex flex-col items-center">
 
                 {/* --- Heading --- */}
-                <div className="container px-4 text-center mb-12 md:mb-6 z-20 relative">
+                <div className="container px-4 text-center mb-12 md:mb-18 z-20 relative">
                     <h1 className="text-4xl md:text-6xl font-bold text-[#001B36] tracking-tight leading-[1.1]">
                         Shop the <span className="text-[#007BFF]">#1 most visited</span> car shopping site
                     </h1>
-                    <p className="mx-auto max-w-5xl font-medium text-gray-800 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos iusto magnam rerum quo? Aspernatur perferendis ipsa blanditiis delectus, quaerat quisquam molestias quia esse alias perspiciatis vitae id rerum veniam ipsum aperiam dignissimos neque dolorum repudiandae pariatur. Facilis hic modi, commodi rem placeat quibusdam omnis consequatur animi voluptatum est aperiam!</p>
+                    <p className="mx-auto max-w-5xl font-medium text-gray-800 pt-4">We don’t just sell cars; we understand the culture behind them. We specialize in importing high-grade vehicles directly from Japan and Europe.</p>
                 </div>
 
                 {/* --- Images Row --- */}
