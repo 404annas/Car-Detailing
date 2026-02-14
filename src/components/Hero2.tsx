@@ -104,19 +104,19 @@ const Hero2 = () => {
                 </div>
 
                 {/* RIGHT CARD */}
-                <div className="bg-white rounded-[24px] sm:rounded-[36px] shadow-xl p-6 sm:p-8 w-full max-w-lg mx-auto lg:ml-auto mt-16 lg:mt-0 relative">
+                {/* RIGHT CARD */}
+                <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 w-full max-w-lg mx-auto lg:ml-auto mt-16 lg:mt-0 relative">
 
-                    {/* TABS */}
-                    {/* Changed flex to grid for better mobile responsiveness on small screens */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 -mt-16 sm:-mt-20 mb-6 sm:mb-8">
+                    {/* TABS (Unchanged) */}
+                    <div className="grid grid-cols-4 gap-2 sm:gap-3 -mt-16 sm:-mt-20 mb-6 sm:mb-8">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`w-full h-20 sm:h-24 rounded-xl border-4 flex flex-col items-center justify-center transition-all duration-300 cursor-pointer
-                                    ${activeTab === tab.id
+                                className={`w-full h-20 sm:h-24 rounded-xl border-4 flex flex-col items-center justify-center transition-all duration-300 cursor-pointer shadow-sm
+                    ${activeTab === tab.id
                                         ? "border-green-500 bg-white shadow-lg translate-y-[-5px]"
-                                        : "border-gray-200 bg-gray-100 text-gray-500"
+                                        : "border-gray-200 bg-gray-100 text-gray-500 hover:bg-gray-50"
                                     }`}
                             >
                                 <span className="text-2xl sm:text-3xl">{tab.icon}</span>
@@ -128,69 +128,83 @@ const Hero2 = () => {
                     </div>
 
                     {/* FORM */}
-                    <div className="space-y-4 text-sm">
+                    <div className="space-y-4">
 
-                        {/* PICKUP */}
-                        <div>
-                            <label className="text-xs orb font-bold text-gray-500 uppercase">
-                                Pick-Up
-                            </label>
-                            <div className="relative mt-1">
+                        {/* ROW 1: BRAND & MODEL */}
+                        <div className="grid grid-cols-2 gap-4">
+                            <div>
+                                <label className="text-xs orb font-bold text-gray-500 uppercase">
+                                    Brand / Make
+                                </label>
+                                <select className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all bg-white cursor-pointer">
+                                    <option value="" disabled selected>Select Make</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="audi">Mitsubushi</option>
+                                    <option value="bmw">Lexus</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Suzuki</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-xs orb font-bold text-gray-500 uppercase">
+                                    Model
+                                </label>
                                 <input
-                                    placeholder="Airport, postcode, city..."
-                                    className="w-full border rounded-lg pl-10 pr-10 py-3 border-green-500 outline-none focus:ring-1 focus:ring-green-500 transition-all"
+                                    type="text"
+                                    placeholder="e.g. Corolla, X5"
+                                    className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all"
                                 />
-                                <span className="absolute left-3 top-3 text-gray-400"><Search size={20} /></span>
-                                <span className="absolute right-3 top-3 text-green-500"><LocateFixed size={20} /></span>
                             </div>
                         </div>
 
-                        {/* CHECKBOX */}
-                        <label className="flex items-center gap-2 text-gray-700 select-none">
-                            <input type="checkbox" className="accent-green-500 cursor-pointer w-4 h-4" />
-                            <span className="text-xs sm:text-sm">Choose a different return location</span>
-                        </label>
-
-                        {/* DATES */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {["Date From", "Date To"].map((label) => (
-                                <div key={label}>
-                                    <label className="text-xs orb font-bold text-gray-500 uppercase">
-                                        {label}
-                                    </label>
-                                    <div className="flex border border-gray-300 rounded-lg overflow-hidden mt-1">
-                                        <input type="date" className="p-3 w-full outline-none text-xs sm:text-sm" />
-                                        <input
-                                            type="time"
-                                            className="p-3 border-l border-gray-300 bg-gray-50 outline-none text-xs sm:text-sm"
-                                        />
-                                    </div>
-                                </div>
-                            ))}
+                        {/* ROW 2: BUDGET & PHONE (Added as important fields) */}
+                        <div className="grid grid-cols-2 gap-4">
+                            <div>
+                                <label className="text-xs orb font-bold text-gray-500 uppercase">
+                                    Budget Range
+                                </label>
+                                <select className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all bg-white cursor-pointer">
+                                    <option value="" disabled selected>Select Range</option>
+                                    <option value="10-20">$10k - $20k</option>
+                                    <option value="20-50">$20k - $50k</option>
+                                    <option value="50-100">$50k - $100k</option>
+                                    <option value="100+">$100k +</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="text-xs orb font-bold text-gray-500 uppercase">
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    placeholder="+1 (555) 000-0000"
+                                    className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all"
+                                />
+                            </div>
                         </div>
 
-                        {/* RENTAL */}
+                        {/* ROW 3: APPOINTMENT DATE & TIME */}
                         <div>
                             <label className="text-xs orb font-bold text-gray-500 uppercase">
-                                Rental Type
+                                Schedule Meeting / Test Drive
                             </label>
-                            <div className="flex flex-wrap gap-4 sm:gap-6 mt-2">
-                                {["Economy", "Check Payment", "PayPal"].map((type) => (
-                                    <label key={type} className="flex gap-2 items-center cursor-pointer">
-                                        <input
-                                            type="radio"
-                                            name="rental"
-                                            className="accent-green-500 w-4 h-4"
-                                        />
-                                        <span className="text-xs sm:text-sm whitespace-nowrap">{type}</span>
-                                    </label>
-                                ))}
+                            <div className="grid grid-cols-2 gap-0 mt-1 border border-green-300 rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-green-500 focus-within:border-green-500">
+                                <input
+                                    type="date"
+                                    className="p-3 w-full outline-none text-sm bg-white text-gray-600 border-r border-gray-200"
+                                />
+                                <input
+                                    type="time"
+                                    className="p-3 w-full outline-none text-sm bg-gray-50 text-gray-600"
+                                />
                             </div>
                         </div>
 
-                        {/* BUTTON */}
-                        <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 rounded-lg uppercase orb tracking-wider cursor-pointer transition-all duration-300 mt-4 text-sm sm:text-base shadow-lg hover:shadow-xl active:scale-95">
-                            Submit
+                        {/* SUBMIT BUTTON */}
+                        <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg uppercase orb cursor-pointer transition-all duration-300 mt-2 text-xs sm:text-sm shadow-sm active:scale-95 flex items-center justify-center gap-2">
+                            Schedule Consultation
                         </button>
                     </div>
                 </div>
