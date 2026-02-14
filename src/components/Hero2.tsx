@@ -54,6 +54,8 @@ const Hero2 = () => {
                 />
             ))}
 
+            <div className="absolute inset-0 bg-black/50"></div>
+
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center h-full">
 
                 {/* LEFT CONTENT */}
@@ -87,7 +89,7 @@ const Hero2 = () => {
                         </span>
                     </h1>
 
-                    <p className="text-lg leading-normal font-medium">At Elite Motor Cars, value means access, peace of mind, and simplicity. Whether it's a luxury European model or a specialized import, we handle the risks and complexities so you don’t have to.</p>
+                    <p className="text-lg leading-normal pt-2 font-medium">At Elite Motor Cars, value means access, peace of mind, and simplicity. Whether it's a luxury European model or a specialized import, we handle the risks and complexities so you don’t have to.</p>
 
                     <ul className="mt-8 space-y-3 text-sm sm:text-base font-semibold inline-block lg:block text-left">
                         {[
