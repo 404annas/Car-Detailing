@@ -10,7 +10,7 @@ const Hero3 = () => {
             <div className="w-full flex flex-col items-center">
 
                 {/* --- Heading --- */}
-                <div className="container px-4 text-center mb-12 md:mb-18 z-20 relative">
+                <div className="container px-4 text-center mb-12 md:mb-12 z-20 relative">
                     <h1 className="text-4xl md:text-[58px] font-bold text-[#001B36] tracking-tight leading-[1.1]">
                         Your <span className="text-[#007BFF]">#1 Gateway</span> to Global Automotive Excellence
                     </h1>
