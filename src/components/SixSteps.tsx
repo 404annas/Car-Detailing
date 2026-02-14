@@ -1,0 +1,69 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import sixBgImg from "@/assets/sixBg.jpg";
+
+const SixSteps = () => {
+    const steps = [
+        { id: 1, title: "The Personal Consultation" },
+        { id: 2, title: "Global Search & Selection" },
+        { id: 3, title: "Forensic Inspection & Bidding" },
+        { id: 4, title: "Secure Shipping & Logistics" },
+        { id: 5, title: "Australian Customs & Compliance" },
+        { id: 6, title: "Final Detailing & Handover" },
+    ];
+
+    return (
+        <section className="relative w-full py-20 overflow-hidden">
+            {/* Background Image with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src={sixBgImg}
+                    alt="Background Pattern"
+                    fill
+                    className="w-full h-auto"
+                />
+            </div>
+
+            <div className="container mx-auto px-4 relative z-10">
+
+                {/* Main Heading */}
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#001B36]">
+                        Your Dream Car, Delivered: The 6-Step Sourcing Roadmap
+                    </h2>
+                </div>
+
+                {/* Steps Row */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center justify-center">
+                    {steps.map((step) => (
+                        <div key={step.id} className="flex items-center w-full group">
+
+                            {/* Large Number */}
+                            <span className="text-5xl md:text-6xl font-bold text-[#4B9CD3] mr-3 shrink-0 leading-none">
+                                {step.id}
+                            </span>
+
+                            {/* The Arrow Box */}
+                            {/* We use filter: drop-shadow to apply shadow to the custom shape */}
+                            <div
+                                className="relative bg-white h-20 w-full flex items-center justify-center px-4 py-2 text-center transition-transform duration-300 hover:-translate-y-1"
+                                style={{
+                                    clipPath: "polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)",
+                                    filter: "drop-shadow(0px 2px 3px rgba(0,0,0,0.05))"
+                                }}
+                            >
+                                <p className="text-[#333] text-xs md:text-[11px] lg:text-xs font-medium leading-tight pr-2">
+                                    {step.title}
+                                </p>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default SixSteps;

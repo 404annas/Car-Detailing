@@ -14,6 +14,7 @@ import HeroBottom from '@/components/HeroBottom';
 import Navbar from '@/components/Navbar'
 import Numbers from '@/components/Numbers'
 import Offering from '@/components/Offering'
+import SixSteps from '@/components/SixSteps';
 import StepCards from '@/components/StepCards'
 import Steps from '@/components/Steps'
 import Testimonials from '@/components/Testimonials'
@@ -27,6 +28,7 @@ const Home = () => {
           <Hero3 />
         </div>
         <HeroBottom />
+        <SixSteps />
         {/* <About /> */}
         {/* <div id="our-fleet">
           <Cars />
