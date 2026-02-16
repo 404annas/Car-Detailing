@@ -6,6 +6,8 @@ import Navbar2 from '@/components/Navbar2';
 import Process from "@/components/Process";
 import Assistance from "@/components/Assistance";
 import Footer from "@/components/Footer";
+import Bot from "@/components/Bot";
+import Footer2 from "@/components/Footer2";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -48,7 +50,9 @@ export default function RootLayout({
         {children}
         <Process />
         <Assistance />
-        <Footer />
+        <Footer2 />
+
+        <Bot />
         <Toaster
           position="bottom-right"
           richColors={true}

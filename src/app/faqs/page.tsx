@@ -41,14 +41,14 @@ const Faqs = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
                     <div className="max-w-2xl">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-[2px] bg-blue-500"></div>
-                            <span className="text-blue-600 orb font-bold uppercase text-xs">
+                            <div className="w-10 h-[2px] bg-[#050c4e]"></div>
+                            <span className="text-[#050c4e] orb font-bold uppercase text-xs">
                                 Frequently Asked Questions
                             </span>
                         </div>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl orb font-black text-[#161621] uppercase leading-[0.9] tracking-tighter">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl orb font-bold text-[#050c4e] uppercase leading-[0.9] tracking-tighter">
                             Common
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"> Questions.</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-950"> Questions.</span>
                         </h2>
                     </div>
                     <p className="text-gray-500 text-xs sm:text-sm max-w-sm orb uppercase leading-normal border-l border-blue-200 pl-6">
@@ -73,12 +73,12 @@ const Faqs = () => {
                                         <span className={`orb font-bold text-sm mt-1 transition-colors duration-300 ${isOpen ? 'text-blue-500' : 'text-blue-300'}`}>
                                             0{index + 1}
                                         </span>
-                                        <span className={`text-base leading-none sm:text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-blue-600 translate-x-2' : 'text-[#161621]'}`}>
+                                        <span className={`text-base leading-none sm:text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-blue-600 translate-x-2' : 'text-[#050c4e]'}`}>
                                             {faq.question}
                                         </span>
                                     </div>
 
-                                    <div className={`relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-500 ${isOpen ? 'bg-blue-500 text-white rotate-45' : 'bg-blue-50 text-blue-400 group-hover:bg-blue-50'}`}>
+                                    <div className={`relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-500 ${isOpen ? 'bg-blue-950 text-white rotate-45' : 'bg-blue-50 text-[#050c4e] group-hover:bg-blue-50'}`}>
                                         <Plus size={20} className="transition-transform duration-500" />
                                     </div>
                                 </button>
@@ -108,12 +108,12 @@ const Faqs = () => {
                 {/* Bottom Minimal Footer */}
                 <div className="pt-10 border-t border-blue-100 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-6">
-                        <HelpCircle className="text-blue-500" size={40} />
-                        <p className="text-[#161621] font-bold orb text-sm uppercase">
+                        <HelpCircle className="text-[#050c4e]" size={40} />
+                        <p className="text-[#050c4e] font-bold orb text-sm uppercase">
                             Still have a specific inquiry?
                         </p>
                     </div>
-                    <button className="px-10 py-4 bg-[#161621] text-white orb text-xs font-bold uppercase hover:bg-blue-600 transition-all duration-300 cursor-pointer rounded-xl">
+                    <button className="px-10 py-4 bg-[#050c4e] text-white orb text-xs font-bold uppercase hover:bg-[#020631] transition-all duration-300 cursor-pointer rounded-xl">
                         Contact Our Specialists
                     </button>
                 </div>
