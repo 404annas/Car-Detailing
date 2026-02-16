@@ -21,7 +21,8 @@ const SixSteps = () => {
                     src={sixBgImg}
                     alt="Background Pattern"
                     fill
-                    className="w-full h-auto"
+                    priority
+                    className="object-cover"
                 />
             </div>
 

@@ -10,7 +10,9 @@ import {
     Menu,
     User,
     Filter,
-    PhoneCall
+    PhoneCall,
+    Mail,
+    ShoppingCart
 } from "lucide-react";
 import logo from "@/assets/logo.svg";
 import Link from "next/link";
@@ -48,7 +50,7 @@ const Navbar2 = () => {
                 </div>
 
                 {/* Right Side Icons & Selectors */}
-                <div className="ml-auto flex items-center space-x-4">
+                <div className="ml-auto flex items-center space-x-3">
                     <div className="bg-[#56A9DC] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#448fbe] transition-colors duration-300">
                         <div className="bg-white rounded-full p-1 mr-2">
                             <DollarSign size={14} className="text-[#3A9BD5]" />
@@ -67,17 +69,17 @@ const Navbar2 = () => {
                         </div>
                     </div>
 
-                    <div className="relative cursor-pointer text-white p-1">
-                        <PhoneCall size={24} />
-                        <span className="absolute top-0 right-0 bg-[#E74C3C] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold border border-white">
+                    <div className="relative cursor-pointer text-black bg-white p-2 rounded-full">
+                        <Mail size={20} />
+                        {/* <span className="absolute top-0 right-0 bg-[#E74C3C] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold border border-white">
                             4
-                        </span>
+                        </span> */}
                     </div>
 
-                    <div className="flex items-center bg-[#56A9DC] rounded-full px-2 py-1 cursor-pointer border border-[#8ec6e8]">
-                        <Menu size={20} className="text-white mr-1" />
-                        <div className="bg-white rounded-full p-0.5">
-                            <User size={20} className="text-gray-700" />
+                    <div className="flex items-center bg-[#56A9DC] rounded-full px-0.5 py-0.5 cursor-pointer border border-[#8ec6e8]">
+                        {/* <Menu size={20} className="text-white mr-1" /> */}
+                        <div className="bg-white rounded-full p-2">
+                            <ShoppingCart size={20} className="text-gray-700" />
                         </div>
                     </div>
                 </div>
