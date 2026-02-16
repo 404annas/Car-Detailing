@@ -7,33 +7,33 @@ const HowToBuy = () => {
     const steps = [
         {
             id: "01",
-            text: "Select a car & send inquiry",
-            bgColor: "bg-[#3498db]", // Light Blue
+            text: "Unrivalled Import Expertise (JDM, German & Italian)",
+            bgColor: "bg-[#3498db]",
             borderColor: "border-[#3498db]",
         },
         {
             id: "02",
-            text: "Receive details by email & in My Inquiry",
-            bgColor: "bg-[#2980b9]", // Darker Blue
+            text: "Bespoke Global Sourcing Concierge Service",
+            bgColor: "bg-[#2980b9]",
             borderColor: "border-[#1a5276]",
         },
         {
             id: "03",
-            text: "Confirm & get invoice",
-            bgColor: "bg-[#c0392b]", // Actually Purple/Pink in image, using #d63384
+            text: "Curated Selection of Premium Local Vehicles",
+            bgColor: "bg-[#c0392b]",
             customBg: "bg-[#d63384]",
             borderColor: "border-[#d63384]",
         },
         {
             id: "04",
-            text: "Pay & Share payment proof (T/T copy)",
-            bgColor: "bg-[#e67e22]", // Orange
+            text: "Australia-Wide White-Glove Vehicle Delivery",
+            bgColor: "bg-[#e67e22]",
             borderColor: "border-[#e67e22]",
         },
         {
             id: "05",
-            text: "Receive the car",
-            bgColor: "bg-[#f1c40f]", // Mustard Yellow
+            text: "Full Compliance, Transparency & Quality Assurance",
+            bgColor: "bg-[#f1c40f]",
             customBg: "bg-[#d4ac0d]",
             borderColor: "border-[#d4ac0d]",
         },
@@ -43,8 +43,9 @@ const HowToBuy = () => {
         <section className="py-10 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Section Heading */}
-                <h2 className="text-3xl font-bold text-[#333] mb-12 ml-2">How to buy ?</h2>
-
+                <h2 className="text-3xl font-bold text-[#333] mb-12 ml-2">
+                    Why Choose Elite Motor Cars
+                </h2>
                 {/* Steps Container */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                     {steps.map((step, index) => (
@@ -60,7 +61,7 @@ const HowToBuy = () => {
                             </div>
 
                             {/* Step Text */}
-                            <div className="px-3 pr-6 text-white text-sm font-semibold leading-tight">
+                            <div className="px-3 pr-0 text-white text-xs font-semibold leading-tight">
                                 {step.text}
                             </div>
                         </div>
