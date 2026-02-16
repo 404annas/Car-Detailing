@@ -6,22 +6,22 @@ const Benefits = () => {
         {
             id: 1,
             src: "/lottie/benifit1.lottie",
-            title: "5-day money\nback",
+            title: "Compliance",
         },
         {
             id: 2,
             src: "/lottie/benifit2.lottie",
-            title: "200+ points\ninspected",
+            title: "Transparency",
         },
         {
             id: 3,
             src: "/lottie/benifit3.lottie",
-            title: "Warranty\nincluded",
+            title: "Security",
         },
         {
             id: 4,
             src: "/lottie/benifit4.lottie",
-            title: "Fixed price\nassurance",
+            title: "Simplicity",
         },
     ];
 
@@ -30,8 +30,8 @@ const Benefits = () => {
             <div className="container mx-auto px-4">
 
                 {/* Title */}
-                <h2 className="text-center text-3xl font-bold text-[#050c4e] mb-10">
-                    Spinny benefits
+                <h2 className="text-center text-2xl sm:text-3xl font-bold text-[#050c4e] mb-10">
+                    Benefits With Us
                 </h2>
 
                 {/* Cards Grid */}

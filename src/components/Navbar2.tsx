@@ -12,7 +12,8 @@ import {
     Filter,
     PhoneCall,
     Mail,
-    ShoppingCart
+    ShoppingCart,
+    UsersRound
 } from "lucide-react";
 import logo from "@/assets/logo.svg";
 import Link from "next/link";
@@ -42,30 +43,25 @@ const Navbar2 = () => {
                     <Link href="/how-we-deliver" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Deliver</Link>
                     <Link href="/choose-us" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Why Choose Us</Link>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Testimonials</a>
-                    <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Car Talk</a>
-                    <div className="flex items-center cursor-pointer hover:opacity-80 transition-all duration-300">
-                        <span>More</span>
-                        <ChevronDown size={16} className="ml-1" />
-                    </div>
+                    <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Faqs</a>
                 </div>
 
                 {/* Right Side Icons & Selectors */}
                 <div className="ml-auto flex items-center space-x-3">
                     <div className="bg-[#051072] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#020f86] transition-colors duration-300">
-                        <div className="bg-white rounded-full p-1 mr-2">
-                            <DollarSign size={14} className="text-[#3A9BD5]" />
+                        <div className="bg-white rounded-full p-1.5 mr-2">
+                            <UsersRound size={14} className="text-[#050c4e]" />
                         </div>
                         <div className="flex flex-col leading-none">
-                            <span className="text-[10px] opacity-90 font-medium">Currency</span>
-                            <span className="text-xs font-bold uppercase">USD</span>
+                            <span className="text-xs opacity-90 font-medium">Contact Us</span>
                         </div>
                     </div>
 
                     <div className="bg-[#051072] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#020f86] transition-colors duration-300">
                         <MapPin size={18} className="mr-2" />
                         <div className="flex flex-col leading-none pr-4">
-                            <span className="text-[10px] opacity-90 font-medium">Delivery To:</span>
-                            <span className="text-xs font-bold">-</span>
+                            <span className="text-xs opacity-90 font-medium">Located At:</span>
+                            <span className="text-[10px] font-bold">Australia</span>
                         </div>
                     </div>
 

@@ -32,6 +32,9 @@ const Home = () => {
         <Hero3 />
       </div>
       <HeroBottom />
+      <div id="featured-cars">
+        <FeaturedCars />
+      </div>
       <SixSteps />
       {/* <About /> */}
       {/* <div id="our-fleet">
@@ -47,27 +50,24 @@ const Home = () => {
           <BgSteps />
         </div> */}
 
-      <div id="featured-cars">
-        <FeaturedCars />
-      </div>
-      <div id="numbers">
+      {/* <div id="numbers">
         <Numbers />
-      </div>
-      <div id="how-it-works">
+      </div> */}
+      <Benifits />
+      <SellCar />
+      <Process />
+      {/* <div id="how-it-works">
         <Steps />
-      </div>
+      </div> */}
       <div id="faqs">
         <Faqs />
       </div>
-      <Benifits />
-      <SellCar />
       <div id="testimonials">
         <Testimonials2 />
       </div>
-      <div id="contact">
+      {/* <div id="contact">
         <Contact />
-      </div>
-      <Process />
+      </div> */}
       <Assistance />
       <Footer />
     </div>

@@ -37,7 +37,7 @@ const Steps = () => {
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* --- Header --- */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-8">
@@ -45,7 +45,7 @@ const Steps = () => {
                 <span className="text-blue-500 font-bold uppercase text-xs mb-4 block orb">
                     How Our Process Work
                 </span>
-                <h2 className="text-4xl md:text-5xl font-black text-white uppercase orb leading-none">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase orb leading-none">
                     Your Journey to <br/>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-600">
                         The Driver's Seat
@@ -62,7 +62,7 @@ const Steps = () => {
           {steps.map((step, index) => (
             <div 
                 key={index} 
-                className="group relative bg-[#121826] border border-blue-800 hover:border-blue-500/50 rounded-xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10 flex flex-col min-h-[420px]"
+                className="group relative bg-[#121826] border border-blue-800 hover:border-blue-500/50 rounded-xl p-6 sm:p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10 flex flex-col min-h-[420px]"
             >
                 {/* Large Watermark Number */}
                 <span className="absolute top-2 right-6 text-[140px] font-black text-gray-800/10 group-hover:text-blue-500/5 transition-colors duration-500 select-none orb leading-none z-0">
@@ -81,12 +81,12 @@ const Steps = () => {
                     <h4 className="text-blue-500 font-bold text-xs uppercase mb-2 orb">
                         {step.subtitle}
                     </h4>
-                    <h3 className="text-3xl font-bold text-white mb-6 orb">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 orb">
                         {step.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-400 leading-normal mb-8 border-t border-blue-800 pt-6 group-hover:border-blue-700 transition-colors">
+                    <p className="text-gray-400 leading-normal mb-8 border-t border-blue-800 pt-6 group-hover:border-blue-700 transition-colors sm:text-base text-sm">
                         {step.desc}
                     </p>
 

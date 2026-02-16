@@ -14,7 +14,7 @@ const SixSteps = () => {
     ];
 
     return (
-        <section className="relative w-full py-20 overflow-hidden">
+        <section className="relative w-full py-10 md:py-20 overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -30,13 +30,13 @@ const SixSteps = () => {
 
                 {/* Main Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#001B36]">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#001B36]">
                         Your Dream Car, Delivered: The 6-Step Sourcing Roadmap
                     </h2>
                 </div>
 
                 {/* Steps Row */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center justify-center">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center justify-center">
                     {steps.map((step) => (
                         <div key={step.id} className="flex items-center w-full group">
 

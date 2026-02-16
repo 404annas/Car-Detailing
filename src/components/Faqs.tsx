@@ -35,7 +35,7 @@ const Faqs = () => {
 
     return (
         <section className="py-10 bg-white relative">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6">
 
                 {/* Header Section: Professional & Clean */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
@@ -46,12 +46,12 @@ const Faqs = () => {
                                 Frequently Asked Questions
                             </span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl orb font-black text-[#161621] uppercase leading-[0.9] tracking-tighter">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl orb font-black text-[#161621] uppercase leading-[0.9] tracking-tighter">
                             Common
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"> Questions.</span>
                         </h2>
                     </div>
-                    <p className="text-gray-500 text-sm max-w-sm orb uppercase leading-normal border-l border-blue-200 pl-6">
+                    <p className="text-gray-500 text-xs sm:text-sm max-w-sm orb uppercase leading-normal border-l border-blue-200 pl-6">
                         Elite Motor Cars Global Sourcing Division — Frequently Asked Questions.
                     </p>
                 </div>
@@ -69,11 +69,11 @@ const Faqs = () => {
                                     onClick={() => setActiveIndex(isOpen ? null : index)}
                                     className="w-full flex items-center justify-between py-8 text-left transition-all duration-300 cursor-pointer"
                                 >
-                                    <div className="flex items-start gap-8">
+                                    <div className="flex items-start gap-4 sm:gap-8">
                                         <span className={`orb font-bold text-sm mt-1 transition-colors duration-300 ${isOpen ? 'text-blue-500' : 'text-blue-300'}`}>
                                             0{index + 1}
                                         </span>
-                                        <span className={`text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-blue-600 translate-x-2' : 'text-[#161621]'}`}>
+                                        <span className={`text-base leading-none sm:text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-blue-600 translate-x-2' : 'text-[#161621]'}`}>
                                             {faq.question}
                                         </span>
                                     </div>
@@ -91,7 +91,7 @@ const Faqs = () => {
                                     <div className="flex gap-8">
                                         <div className="w-10 hidden md:block"></div>
                                         <div className="pl-0 md:pl-4 max-w-3xl">
-                                            <p className="text-gray-500 text-lg leading-relaxed font-light">
+                                            <p className="text-gray-500 sm:text-lg leading-relaxed font-light">
                                                 {faq.answer}
                                             </p>
                                             <div className="mt-6 flex items-center gap-2 text-blue-600 font-bold orb text-xs uppercase cursor-pointer hover:gap-4 transition-all duration-300">

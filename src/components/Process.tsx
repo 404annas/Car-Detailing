@@ -3,9 +3,9 @@ import processImg from "@/assets/process1.svg";
 
 const Process = () => {
     return (
-        <div className="flex items-center justify-center pb-10 bg-gray-50">
+        <div className="flex items-center justify-center py-10 bg-gray-50">
             {/* Main Container: White box with shadow and rounded corners */}
-            <div className="bg-white rounded-2xl border border-gray-100 flex flex-col md:flex-row items-center max-w-5xl w-full p-8 md:p-8 overflow-hidden relative">
+            <div className="bg-white rounded-2xl border border-gray-100 flex flex-col md:flex-row items-center max-w-5xl w-full p-6 md:p-8 overflow-hidden relative">
                 {/* Left Side: Illustration */}
                 <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0 z-10">
                     <img
@@ -17,8 +17,8 @@ const Process = () => {
 
                 {/* Right Side: Form */}
                 <div className="w-full md:w-1/2 px-2 md:px-10 z-10">
-                    <h2 className="text-[#050c4e] text-lg md:text-xl font-bold mb-8">
-                        Enter Your Details To Start Finance Process
+                    <h2 className="text-[#050c4e] text-base sm:text-lg md:text-xl font-bold mb-8">
+                        Enter Your Details To Request A Call Back
                     </h2>
 
                     <form className="space-y-4">
@@ -47,7 +47,7 @@ const Process = () => {
 
                     {/* Footer Text */}
                     <p className="text-gray-500 text-xs mt-6 text-center">
-                        By logging in, I agree to Spinny's
+                        I agree to
                         <span className="text-purple-700 cursor-pointer"> terms </span>
                         and
                         <span className="text-purple-700 cursor-pointer"> privacy policy</span>

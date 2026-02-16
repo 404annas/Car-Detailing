@@ -89,12 +89,12 @@ const Testimonials2 = () => {
           <div className="bg-white pr-6 z-10 mx-auto md:mx-0">
             {/* Centered Title logic roughly matching image */}
             <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center pointer-events-none hidden md:block">
-              <span className="bg-white px-6 text-3xl font-bold text-[#050c4e]">
+              <span className="bg-white px-6 text-2xl sm:text-3xl font-bold text-[#050c4e]">
                 User Reviews & Ratings
               </span>
             </div>
             {/* Mobile Title */}
-            <h2 className="text-3xl font-bold text-[#050c4e] md:hidden text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#050c4e] md:hidden text-center">
               User Reviews & Ratings
             </h2>
           </div>

@@ -62,17 +62,17 @@ const Contact = () => {
 
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl uppercase sm:text-4xl font-extrabold text-[#0B1324] orb mb-4">
+                    <h2 className="text-2xl sm:text-3xl uppercase sm:text-4xl font-extrabold text-[#0B1324] orb mb-4">
                         Get in Touch
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 sm:text-lg">
                         Have a question about a vehicle or need a custom quote? Fill out the form below and our team will get back to you shortly.
                     </p>
                 </div>
 
                 {/* Form Card */}
                 <div className="max-w-5xl mx-auto bg-white rounded-3xl overflow-hidden border border-gray-100">
-                    <div className="p-8 sm:p-12">
+                    <div className="p-6 sm:p-12">
 
                         {/* Success Message Alert */}
                         {isSuccess ? (

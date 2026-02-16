@@ -99,13 +99,13 @@ const Numbers = () => {
                                     </div>
 
                                     {/* Number Value */}
-                                    <h3 className="text-5xl font-bold text-white tracking-wide orb">
+                                    <h3 className="text-4xl md:text-5xl font-bold text-white tracking-wide orb">
                                         {stat.value}
                                     </h3>
 
                                     {/* Label */}
                                     <p
-                                        className={`font-medium text-lg orb capitalize tracking-wide
+                                        className={`font-medium text-base -mt-2 md:text-lg orb capitalize tracking-wide
                       ${stat.theme === "blue"
                                                 ? "text-[#161621]" // Dark Text on blue
                                                 : "text-blue-500" // blue Text on Dark

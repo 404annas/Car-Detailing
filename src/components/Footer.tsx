@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="absolute inset-0 bg-black/40" />
 
             {/* Content */}
-            <div className="relative z-10 h-full max-w-7xl mx-auto px-10 flex flex-col justify-between py-16">
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-10 flex flex-col justify-between py-10 sm:py-16">
 
                 {/* Top Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -56,7 +56,7 @@ const Footer = () => {
                     </h2>
 
                     {/* Navigation Links */}
-                    <div className="ml-auto grid grid-cols-2 gap-x-10 gap-y-2 text-sm text-left">
+                    <div className="sm:ml-auto grid grid-cols-2 gap-x-0 sm:gap-x-10 gap-y-2 text-sm text-left">
                         <button
                             onClick={() => scrollToSection("#home")}
                             className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"

@@ -282,18 +282,18 @@ const FeaturedCars = () => {
     const displayedCars = showAll ? cars : cars.slice(0, 6);
 
     return (
-        <section className="px-4 sm:px-10 py-10 bg-white">
+        <section className="px-4 sm:px-10 py-10 bg-black">
 
             {/* Header */}
             <div className="flex sm:flex-row flex-col gap-2 items-center justify-between mb-10">
-                <h2 className="text-2xl sm:text-3xl font-bold orb">
+                <h2 className="text-2xl sm:text-3xl font-bold orb text-white">
                     FEATURED CARS
                 </h2>
 
                 <button
                     // 5. Add onClick handler
                     onClick={() => setShowAll(!showAll)}
-                    className="bg-[#050c4e] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#030835] transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
+                    className="bg-[#050c4e] text-white px-6 py-3 rounded-lg font-medium hover:scale-98 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
                 >
                     {/* 6. Dynamic Text */}
                     {showAll ? "SHOW LESS" : "SHOW ALL"}
@@ -321,8 +321,8 @@ const FeaturedCars = () => {
                                 />
                             </div>
                             <div>
-                                <h3 className="font-semibold orb text-lg">{car.name}</h3>
-                                <p className="text-sm text-gray-600">{car.meta}</p>
+                                <h3 className="font-semibold orb text-base sm:text-lg leading-none text-white">{car.name}</h3>
+                                <p className="text-sm text-gray-400">{car.meta}</p>
                             </div>
                         </div>
 

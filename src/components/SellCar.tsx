@@ -12,37 +12,37 @@ const SellCar = () => {
     const steps = [
         {
             img: sell1.src,
-            title: "Let’s talk about your car",
-            desc: "Tell us about your beloved and get an instant online quote",
-            linkText: "Get quote",
+            title: "Consultation",
+            desc: "We start by defining your exact requirements. Whether browsing local stock or sourcing globally, we align on the perfect make, model, and grade.",
+            linkText: "Enquire Now",
         },
         {
             img: sell2.src,
-            title: "Pick a day",
-            desc: "Tell us about your beloved and get an instant online quote",
-            linkText: "Get quote",
+            title: "Verification",
+            desc: "Zero surprises. We perform rigorous physical inspections, auction sheet verification, and PPSR title history checks before any money changes hands.",
+            linkText: "Enquire Now",
         },
         {
             img: sell3.src,
-            title: "Credited, the same day",
-            desc: "Tell us about your beloved and get an instant online quote",
-            linkText: "Sell car",
+            title: "Handover",
+            desc: "We handle the logistics, customs, ADR compliance, and detailing. You simply collect your keys or arrange Australia-wide delivery.",
+            linkText: "Enquire Now",
         },
         {
             img: sell4.src,
-            title: "Sit back, relax. Car in Transit",
-            desc: "Tell us about your beloved and get an instant online quote",
-            linkText: "Sell car",
+            title: "Own the Experience",
+            desc: "With everything completed, you drive away with total confidence, knowing your vehicle has been sourced, verified, and delivered to Elite standards.",
+            linkText: "Enquire Now",
         },
     ];
 
     return (
         <section className="py-10 px-4 bg-white max-w-7xl mx-auto">
             {/* Header with horizontal lines */}
-            <div className="flex items-center justify-center mb-10">
+            <div className="flex items-center justify-center mb-6">
                 <div className="hidden md:block h-[1px] bg-[#9ca6ff] flex-grow max-w-[200px]"></div>
-                <h2 className="text-[#050c4e] text-2xl md:text-3xl font-bold px-6 text-center">
-                    Sell your car for the Best Price
+                <h2 className="text-[#050c4e] text-2xl sm:text-3xl font-bold px-6 text-center">
+                    Customer Journey With Elite Motor Cars
                 </h2>
                 <div className="hidden md:block h-[1px] bg-[#9ca6ff] flex-grow max-w-[200px]"></div>
             </div>
