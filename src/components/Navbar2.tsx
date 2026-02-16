@@ -13,6 +13,7 @@ import {
     PhoneCall
 } from "lucide-react";
 import logo from "@/assets/logo.svg";
+import Link from "next/link";
 
 const Navbar2 = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,8 +37,8 @@ const Navbar2 = () => {
                 {/* Navigation Links */}
                 <div className="flex items-center ml-36 space-x-6 text-white font-bold text-sm overflow-x-auto no-scrollbar">
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap ">Available Cars</a>
-                    <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Local Page</a>
-                    <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How To Buy</a>
+                    <Link href="/work" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Work</Link>
+                    <Link href="/buy" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How To Buy</Link>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Testimonials</a>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Car Talk</a>
                     <div className="flex items-center cursor-pointer hover:opacity-80 transition-all duration-300">
