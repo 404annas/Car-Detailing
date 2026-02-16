@@ -59,9 +59,9 @@ const Home = () => {
       {/* <div id="how-it-works">
         <Steps />
       </div> */}
-      <div id="faqs">
+      {/* <div id="faqs">
         <Faqs />
-      </div>
+      </div> */}
       <div id="testimonials">
         <Testimonials2 />
       </div>
