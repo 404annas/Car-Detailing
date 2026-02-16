@@ -94,14 +94,14 @@ const CartPage = () => {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-6">
         <div className="max-w-md w-full text-center">
-          <div className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
-            <CheckCircle2 size={48} className="text-green-500" />
+          <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
+            <CheckCircle2 size={48} className="text-blue-500" />
           </div>
           <h2 className="text-4xl orb font-black text-gray-900 uppercase mb-4">Request Sent!</h2>
           <p className="text-gray-500 mb-8 leading-relaxed">
             Your reservation request has been securely transmitted. A dedicated sales concierge will contact you within 24 hours to finalize the wire transfer and shipping logistics.
           </p>
-          <Link href="/" className="block w-full py-4 bg-gray-900 text-white orb font-bold rounded-xl hover:bg-green-600 transition-all duration-300 cursor-pointer shadow-lg">
+          <Link href="/" className="block w-full py-4 bg-gray-900 text-white orb font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 cursor-pointer shadow-lg">
             RETURN TO SHOWROOM
           </Link>
         </div>
@@ -119,7 +119,7 @@ const CartPage = () => {
           </div>
           <h2 className="text-2xl orb font-bold text-gray-900 mb-2">Your garage is empty</h2>
           <p className="text-gray-500 mb-8">You haven't selected any vehicles for reservation yet.</p>
-          <Link href="/" className="inline-block px-10 py-4 bg-green-500 text-white orb font-bold rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-200">
+          <Link href="/" className="inline-block px-10 py-4 bg-blue-500 text-white orb font-bold rounded-xl hover:bg-blue-600 transition-all shadow-lg shadow-blue-200">
             BROWSE INVENTORY
           </Link>
         </div>
@@ -136,7 +136,7 @@ const CartPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl orb font-black text-gray-900 uppercase tracking-tighter">
-                Checkout<span className="text-green-500">.</span>
+                Checkout<span className="text-blue-500">.</span>
               </h1>
               <p className="text-gray-500 text-sm mt-1 font-medium flex items-center gap-2">
                 Review your selection and finalize reservation
@@ -144,11 +144,11 @@ const CartPage = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="flex items-center gap-2 bg-green-50 border border-green-100 px-4 py-2 rounded-full">
-                <Lock size={14} className="text-green-600" />
-                <span className="text-xs font-bold text-green-800 uppercase tracking-wide">256-Bit Secure SSL</span>
+              <div className="flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full">
+                <Lock size={14} className="text-blue-600" />
+                <span className="text-xs font-bold text-blue-800 uppercase tracking-wide">256-Bit Secure SSL</span>
               </div>
-              <Link href={"/"} className="flex items-center gap-2 text-xs font-bold text-green-800 uppercase bg-green-50 border border-green-100 px-4 py-2 cursor-pointer rounded-full"><ArrowLeft className="text-green-600" size={17}/> Go Back</Link>
+              <Link href={"/"} className="flex items-center gap-2 text-xs font-bold text-blue-800 uppercase bg-blue-50 border border-blue-100 px-4 py-2 cursor-pointer rounded-full"><ArrowLeft className="text-blue-600" size={17}/> Go Back</Link>
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ const CartPage = () => {
                       <div>
                         <div className="flex justify-between items-start">
                           <h3 className="text-lg orb font-bold text-gray-900 uppercase leading-tight">{car.name}</h3>
-                          <span className="text-lg orb font-black text-green-600">${car.price}</span>
+                          <span className="text-lg orb font-black text-blue-600">${car.price}</span>
                         </div>
 
                         {/* Specs Grid */}
@@ -225,7 +225,7 @@ const CartPage = () => {
             {/* 2. Delivery & Personal Info */}
             <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
               <h2 className="orb font-bold text-lg text-gray-900 uppercase mb-6 flex items-center gap-2">
-                <MapPin size={20} className="text-green-500" /> Delivery Details
+                <MapPin size={20} className="text-blue-500" /> Delivery Details
               </h2>
 
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
@@ -237,7 +237,7 @@ const CartPage = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="John"
                     />
                   </div>
@@ -248,7 +248,7 @@ const CartPage = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="Doe"
                     />
                   </div>
@@ -262,7 +262,7 @@ const CartPage = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -273,7 +273,7 @@ const CartPage = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -286,7 +286,7 @@ const CartPage = () => {
                     name="address"
                     value={formData.address}
                     onChange={handleInputChange}
-                    className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                    className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                     placeholder="123 Luxury Lane"
                   />
                 </div>
@@ -299,7 +299,7 @@ const CartPage = () => {
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="New York"
                     />
                   </div>
@@ -310,7 +310,7 @@ const CartPage = () => {
                       name="state"
                       value={formData.state}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="NY"
                     />
                   </div>
@@ -321,7 +321,7 @@ const CartPage = () => {
                       name="zip"
                       value={formData.zip}
                       onChange={handleInputChange}
-                      className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                      className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                       placeholder="10001"
                     />
                   </div>
@@ -330,14 +330,14 @@ const CartPage = () => {
                 {/* 3. New Payment Method Section */}
                 <div className="pt-6 border-t border-gray-100">
                   <h3 className="orb font-bold text-lg text-gray-900 uppercase mb-4 flex items-center gap-2">
-                    <CreditCard size={20} className="text-green-500" /> Payment Method
+                    <CreditCard size={20} className="text-blue-500" /> Payment Method
                   </h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {/* Option 1: Wire Transfer */}
                     <label
                       className={`relative border rounded-xl p-4 cursor-pointer transition-all flex flex-col items-center text-center gap-3
-                      ${paymentMethod === 'wire' ? 'border-green-500 bg-green-50 ring-1 ring-green-500' : 'border-gray-200 hover:border-gray-300'}`}
+                      ${paymentMethod === 'wire' ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500' : 'border-gray-200 hover:border-gray-300'}`}
                       onClick={() => setPaymentMethod('wire')}
                     >
                       <div className="bg-white p-2 rounded-full shadow-sm text-gray-800">
@@ -347,13 +347,13 @@ const CartPage = () => {
                         <p className="font-bold text-base text-gray-900">Wire Transfer</p>
                         <p className="text-xs text-gray-500">1-2 Business Days</p>
                       </div>
-                      {paymentMethod === 'wire' && <div className="absolute top-2 right-2 text-green-600"><CheckCircle2 size={16} /></div>}
+                      {paymentMethod === 'wire' && <div className="absolute top-2 right-2 text-blue-600"><CheckCircle2 size={16} /></div>}
                     </label>
 
                     {/* Option 2: Financing */}
                     <label
                       className={`relative border rounded-xl p-4 cursor-pointer transition-all flex flex-col items-center text-center gap-3
-                      ${paymentMethod === 'finance' ? 'border-green-500 bg-green-50 ring-1 ring-green-500' : 'border-gray-200 hover:border-gray-300'}`}
+                      ${paymentMethod === 'finance' ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500' : 'border-gray-200 hover:border-gray-300'}`}
                       onClick={() => setPaymentMethod('finance')}
                     >
                       <div className="bg-white p-2 rounded-full shadow-sm text-gray-800">
@@ -363,13 +363,13 @@ const CartPage = () => {
                         <p className="font-bold text-base text-gray-900">Financing</p>
                         <p className="text-xs text-gray-500">Pre-approval Required</p>
                       </div>
-                      {paymentMethod === 'finance' && <div className="absolute top-2 right-2 text-green-600"><CheckCircle2 size={16} /></div>}
+                      {paymentMethod === 'finance' && <div className="absolute top-2 right-2 text-blue-600"><CheckCircle2 size={16} /></div>}
                     </label>
 
                     {/* Option 3: Card Hold */}
                     <label
                       className={`relative border rounded-xl p-4 cursor-pointer transition-all flex flex-col items-center text-center gap-3
-                      ${paymentMethod === 'card' ? 'border-green-500 bg-green-50 ring-1 ring-green-500' : 'border-gray-200 hover:border-gray-300'}`}
+                      ${paymentMethod === 'card' ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500' : 'border-gray-200 hover:border-gray-300'}`}
                       onClick={() => setPaymentMethod('card')}
                     >
                       <div className="bg-white p-2 rounded-full shadow-sm text-gray-800">
@@ -379,7 +379,7 @@ const CartPage = () => {
                         <p className="font-bold text-base text-gray-900">Credit Card</p>
                         <p className="text-xs text-gray-500">Deposit Only ($500)</p>
                       </div>
-                      {paymentMethod === 'card' && <div className="absolute top-2 right-2 text-green-600"><CheckCircle2 size={16} /></div>}
+                      {paymentMethod === 'card' && <div className="absolute top-2 right-2 text-blue-600"><CheckCircle2 size={16} /></div>}
                     </label>
                   </div>
                 </div>
@@ -405,12 +405,12 @@ const CartPage = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Import Duties</span>
-                  <span className="text-green-400 font-bold uppercase text-xs bg-green-500/10 px-2 py-0.5 rounded">Calculated at port</span>
+                  <span className="text-blue-400 font-bold uppercase text-xs bg-blue-500/10 px-2 py-0.5 rounded">Calculated at port</span>
                 </div>
 
                 <div className="border-t border-gray-700 pt-4 mt-4 flex justify-between items-end">
                   <span className="orb font-bold uppercase text-gray-400">Total Est.</span>
-                  <span className="text-3xl font-black text-green-500 tracking-tight">
+                  <span className="text-3xl font-black text-blue-500 tracking-tight">
                     ${total.toLocaleString()}
                   </span>
                 </div>
@@ -418,7 +418,7 @@ const CartPage = () => {
 
               <button
                 onClick={handleConfirmReservation}
-                className="w-full py-4 bg-green-500 text-white orb font-bold rounded-xl hover:bg-white hover:text-gray-900 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-green-900/20 duration-300 cursor-pointer"
+                className="w-full py-4 bg-blue-500 text-white orb font-bold rounded-xl hover:bg-white hover:text-gray-900 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-blue-900/20 duration-300 cursor-pointer"
               >
                 CONFIRM RESERVATION <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -432,9 +432,9 @@ const CartPage = () => {
             </div>
 
             {/* Trust Badge */}
-            <div className="bg-white border border-green-200 rounded-xl p-4 flex items-center gap-4">
-              <div className="bg-green-50 p-2 rounded-full">
-                <ShieldCheck className="text-green-600" size={24} />
+            <div className="bg-white border border-blue-200 rounded-xl p-4 flex items-center gap-4">
+              <div className="bg-blue-50 p-2 rounded-full">
+                <ShieldCheck className="text-blue-600" size={24} />
               </div>
               <div>
                 <p className="text-xs font-bold text-gray-900 uppercase orb">Money-Back Guarantee</p>

@@ -50,58 +50,58 @@ const Footer = () => {
 
                     {/* Left Text */}
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-none max-w-2xl orb">
-                        <span className="text-green-500">ELITE MOTOR CARS</span>.
+                        <span className="text-blue-500">ELITE MOTOR CARS</span>.
                         <br />
-                        ELEGANCE AND <span className="text-green-500">SPORTINESS</span>.
+                        ELEGANCE AND <span className="text-blue-500">SPORTINESS</span>.
                     </h2>
 
                     {/* Navigation Links */}
                     <div className="ml-auto grid grid-cols-2 gap-x-10 gap-y-2 text-sm text-left">
                         <button
                             onClick={() => scrollToSection("#home")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Home
                         </button>
                         <button
                             onClick={() => scrollToSection("#our-fleet")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Our Fleet
                         </button>
                         <button
                             onClick={() => scrollToSection("#about")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Choose Us
                         </button>
                         <button
                             onClick={() => scrollToSection("#how-it-works")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             How We Work
                         </button>
                         <button
                             onClick={() => scrollToSection("#featured-cars")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Featured Cars
                         </button>
                         <button
                             onClick={() => scrollToSection("#testimonials")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Testimonials
                         </button>
                         <button
                             onClick={() => scrollToSection("#faq")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Faqs
                         </button>
                         <button
                             onClick={() => scrollToSection("#contact")}
-                            className="hover:text-green-400 transition-all duration-300 cursor-pointer text-left"
+                            className="hover:text-blue-400 transition-all duration-300 cursor-pointer text-left"
                         >
                             Contact
                         </button>
@@ -113,11 +113,11 @@ const Footer = () => {
 
                     {/* Social Icons */}
                     <div className="flex items-center gap-6">
-                        <Facebook className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Instagram className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Twitter className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Youtube className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
-                        <Linkedin className="w-5 h-5 cursor-pointer hover:text-green-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Facebook className="w-5 h-5 cursor-pointer hover:text-blue-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Instagram className="w-5 h-5 cursor-pointer hover:text-blue-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Twitter className="w-5 h-5 cursor-pointer hover:text-blue-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Youtube className="w-5 h-5 cursor-pointer hover:text-blue-400 hover:-translate-y-1 transition-all duration-300" />
+                        <Linkedin className="w-5 h-5 cursor-pointer hover:text-blue-400 hover:-translate-y-1 transition-all duration-300" />
                     </div>
 
                     {/* Copyright */}

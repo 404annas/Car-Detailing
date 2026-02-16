@@ -76,8 +76,8 @@ const Contact = () => {
 
                         {/* Success Message Alert */}
                         {isSuccess ? (
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center animate-fade-in">
-                                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center animate-fade-in">
+                                <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <CheckCircle size={32} />
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 orb mb-2">Message Sent!</h3>
@@ -86,7 +86,7 @@ const Contact = () => {
                                 </p>
                                 <button
                                     onClick={() => setIsSuccess(false)}
-                                    className="mt-6 text-green-600 cursor-pointer font-semibold hover:text-green-700 underline"
+                                    className="mt-6 text-blue-600 cursor-pointer font-semibold hover:text-blue-700 underline"
                                 >
                                     Send another message
                                 </button>
@@ -107,7 +107,7 @@ const Contact = () => {
                                             value={formData.firstName}
                                             onChange={handleChange}
                                             placeholder="John"
-                                            className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -121,7 +121,7 @@ const Contact = () => {
                                             value={formData.lastName}
                                             onChange={handleChange}
                                             placeholder="Doe"
-                                            className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                         />
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             placeholder="john@example.com"
-                                            className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -152,7 +152,7 @@ const Contact = () => {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             placeholder="+1 (555) 000-0000"
-                                            className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                         />
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                                         value={formData.company}
                                         onChange={handleChange}
                                         placeholder="Company Ltd. (Optional)"
-                                        className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                                        className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                     />
                                 </div>
 
@@ -184,14 +184,14 @@ const Contact = () => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         placeholder="Tell us about the car you are interested in..."
-                                        className="w-full bg-gray-50 border border-green-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all resize-none"
+                                        className="w-full bg-gray-50 border border-blue-200 rounded-xl px-4 py-3 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
                                     />
                                 </div>
 
                                 {/* Submit Button */}
                                 <button
                                     disabled={isSubmitting}
-                                    className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-green-200 transition-all duration-300 active:scale-95 flex justify-center items-center gap-2 orb uppercase tracking-wider disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                                    className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-200 transition-all duration-300 active:scale-95 flex justify-center items-center gap-2 orb uppercase tracking-wider disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
                                 >
                                     {isSubmitting ? (
                                         <>

@@ -39,7 +39,7 @@ const StepCards: React.FC = () => {
         <section className="py-10 px-4">
             <div className="max-w-6xl mx-auto text-center">
                 {/* Top small heading */}
-                <p className="text-sm font-bold orb tracking-widest text-green-500 uppercase mb-2">
+                <p className="text-sm font-bold orb tracking-widest text-blue-500 uppercase mb-2">
                     how do i rent a car?
                 </p>
 
@@ -95,7 +95,7 @@ const StepCards: React.FC = () => {
                             </div>
 
                             {/* Step Number */}
-                            <p className="text-green-600 font-bold uppercase tracking-wider text-lg orb mb-2">
+                            <p className="text-blue-600 font-bold uppercase tracking-wider text-lg orb mb-2">
                                 STEP {step.id}:
                             </p>
 

@@ -293,7 +293,7 @@ const FeaturedCars = () => {
                 <button
                     // 5. Add onClick handler
                     onClick={() => setShowAll(!showAll)}
-                    className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
+                    className="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm w-full sm:w-fit"
                 >
                     {/* 6. Dynamic Text */}
                     {showAll ? "SHOW LESS" : "SHOW ALL"}
@@ -339,7 +339,7 @@ const FeaturedCars = () => {
 
                         {/* Specs */}
                         <div className="bg-[#0B1324] text-white rounded-xl p-3 space-y-4">
-                            <div className="grid grid-cols-3 gap-4 text-center text-xs sm:text-sm border border-green-500 rounded-xl py-3 pl-2 pr-1">
+                            <div className="grid grid-cols-3 gap-4 text-center text-xs sm:text-sm border border-blue-500 rounded-xl py-3 pl-2 pr-1">
                                 {car.specs.map((spec, i) => {
                                     const Icon = spec.icon
                                     return (
@@ -356,7 +356,7 @@ const FeaturedCars = () => {
 
                             {/* Button */}
                             <Link href={`/cars/${index}`}>
-                                <button className="w-full bg-green-500 text-white py-3 rounded-xl font-medium hover:bg-green-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
+                                <button className="w-full bg-blue-500 text-white py-3 rounded-xl font-medium hover:bg-blue-600 orb transition-all duration-300 cursor-pointer sm:text-base text-sm">
                                     SEE DETAILS
                                 </button>
                             </Link>

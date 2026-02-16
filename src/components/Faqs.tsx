@@ -41,17 +41,17 @@ const Faqs = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
                     <div className="max-w-2xl">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-[2px] bg-green-500"></div>
-                            <span className="text-green-600 orb font-bold uppercase text-xs">
+                            <div className="w-10 h-[2px] bg-blue-500"></div>
+                            <span className="text-blue-600 orb font-bold uppercase text-xs">
                                 Frequently Asked Questions
                             </span>
                         </div>
                         <h2 className="text-4xl md:text-5xl orb font-black text-[#161621] uppercase leading-[0.9] tracking-tighter">
                             Common
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-700"> Questions.</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"> Questions.</span>
                         </h2>
                     </div>
-                    <p className="text-gray-500 text-sm max-w-sm orb uppercase leading-normal border-l border-green-200 pl-6">
+                    <p className="text-gray-500 text-sm max-w-sm orb uppercase leading-normal border-l border-blue-200 pl-6">
                         Elite Motor Cars Global Sourcing Division — Frequently Asked Questions.
                     </p>
                 </div>
@@ -63,22 +63,22 @@ const Faqs = () => {
                         return (
                             <div
                                 key={index}
-                                className="group border-b border-green-100 last:border-0"
+                                className="group border-b border-blue-100 last:border-0"
                             >
                                 <button
                                     onClick={() => setActiveIndex(isOpen ? null : index)}
                                     className="w-full flex items-center justify-between py-8 text-left transition-all duration-300 cursor-pointer"
                                 >
                                     <div className="flex items-start gap-8">
-                                        <span className={`orb font-bold text-sm mt-1 transition-colors duration-300 ${isOpen ? 'text-green-500' : 'text-green-300'}`}>
+                                        <span className={`orb font-bold text-sm mt-1 transition-colors duration-300 ${isOpen ? 'text-blue-500' : 'text-blue-300'}`}>
                                             0{index + 1}
                                         </span>
-                                        <span className={`text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-green-600 translate-x-2' : 'text-[#161621]'}`}>
+                                        <span className={`text-lg md:text-xl orb font-bold transition-all duration-300 ${isOpen ? 'text-blue-600 translate-x-2' : 'text-[#161621]'}`}>
                                             {faq.question}
                                         </span>
                                     </div>
 
-                                    <div className={`relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-500 ${isOpen ? 'bg-green-500 text-white rotate-45' : 'bg-green-50 text-green-400 group-hover:bg-green-50'}`}>
+                                    <div className={`relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-500 ${isOpen ? 'bg-blue-500 text-white rotate-45' : 'bg-blue-50 text-blue-400 group-hover:bg-blue-50'}`}>
                                         <Plus size={20} className="transition-transform duration-500" />
                                     </div>
                                 </button>
@@ -94,7 +94,7 @@ const Faqs = () => {
                                             <p className="text-gray-500 text-lg leading-relaxed font-light">
                                                 {faq.answer}
                                             </p>
-                                            <div className="mt-6 flex items-center gap-2 text-green-600 font-bold orb text-xs uppercase cursor-pointer hover:gap-4 transition-all duration-300">
+                                            <div className="mt-6 flex items-center gap-2 text-blue-600 font-bold orb text-xs uppercase cursor-pointer hover:gap-4 transition-all duration-300">
                                                 Need more info <ArrowRight size={14} />
                                             </div>
                                         </div>
@@ -106,14 +106,14 @@ const Faqs = () => {
                 </div>
 
                 {/* Bottom Minimal Footer */}
-                <div className="pt-10 border-t border-green-100 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div className="pt-10 border-t border-blue-100 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-6">
-                        <HelpCircle className="text-green-500" size={40} />
+                        <HelpCircle className="text-blue-500" size={40} />
                         <p className="text-[#161621] font-bold orb text-sm uppercase">
                             Still have a specific inquiry?
                         </p>
                     </div>
-                    <button className="px-10 py-4 bg-[#161621] text-white orb text-xs font-bold uppercase hover:bg-green-600 transition-all duration-300 cursor-pointer rounded-xl">
+                    <button className="px-10 py-4 bg-[#161621] text-white orb text-xs font-bold uppercase hover:bg-blue-600 transition-all duration-300 cursor-pointer rounded-xl">
                         Contact Our Specialists
                     </button>
                 </div>

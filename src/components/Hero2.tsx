@@ -98,7 +98,7 @@ const Hero2 = () => {
                             "Quality you can drive with confidence",
                         ].map((text) => (
                             <li key={text} className="flex items-start sm:items-center gap-3">
-                                <span className="text-green-500 text-xl mt-1 sm:mt-0"><Check /></span>
+                                <span className="text-blue-500 text-xl mt-1 sm:mt-0"><Check /></span>
                                 <span>{text}</span>
                             </li>
                         ))}
@@ -117,7 +117,7 @@ const Hero2 = () => {
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`w-full h-20 sm:h-24 rounded-xl border-4 flex flex-col items-center justify-center transition-all duration-300 cursor-pointer shadow-sm
                     ${activeTab === tab.id
-                                        ? "border-green-500 bg-white shadow-lg translate-y-[-5px]"
+                                        ? "border-blue-500 bg-white shadow-lg translate-y-[-5px]"
                                         : "border-gray-200 bg-gray-100 text-gray-500 hover:bg-gray-50"
                                     }`}
                             >
@@ -138,7 +138,7 @@ const Hero2 = () => {
                                 <label className="text-xs orb font-bold text-gray-500 uppercase">
                                     Brand / Make
                                 </label>
-                                <select className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all bg-white cursor-pointer">
+                                <select className="w-full mt-1 border border-blue-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all bg-white cursor-pointer">
                                     <option value="" disabled selected>Select Make</option>
                                     <option value="toyota">Toyota</option>
                                     <option value="honda">Honda</option>
@@ -156,7 +156,7 @@ const Hero2 = () => {
                                 <input
                                     type="text"
                                     placeholder="e.g. Corolla, X5"
-                                    className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all"
+                                    className="w-full mt-1 border border-blue-300 rounded-lg p-3 text-sm outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
                                 />
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const Hero2 = () => {
                                 <label className="text-xs orb font-bold text-gray-500 uppercase">
                                     Budget Range
                                 </label>
-                                <select className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all bg-white cursor-pointer">
+                                <select className="w-full mt-1 border border-blue-300 rounded-lg p-3 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all bg-white cursor-pointer">
                                     <option value="" disabled selected>Select Range</option>
                                     <option value="10-20">$10k - $20k</option>
                                     <option value="20-50">$20k - $50k</option>
@@ -182,7 +182,7 @@ const Hero2 = () => {
                                 <input
                                     type="tel"
                                     placeholder="+1 (555) 000-0000"
-                                    className="w-full mt-1 border border-green-300 rounded-lg p-3 text-sm outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all"
+                                    className="w-full mt-1 border border-blue-300 rounded-lg p-3 text-sm outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
                                 />
                             </div>
                         </div>
@@ -192,7 +192,7 @@ const Hero2 = () => {
                             <label className="text-xs orb font-bold text-gray-500 uppercase">
                                 Schedule Meeting / Test Drive
                             </label>
-                            <div className="grid grid-cols-2 gap-0 mt-1 border border-green-300 rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-green-500 focus-within:border-green-500">
+                            <div className="grid grid-cols-2 gap-0 mt-1 border border-blue-300 rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-blue-500 focus-within:border-blue-500">
                                 <input
                                     type="date"
                                     className="p-3 w-full outline-none text-sm bg-white text-gray-600 border-r border-gray-200"
@@ -205,7 +205,7 @@ const Hero2 = () => {
                         </div>
 
                         {/* SUBMIT BUTTON */}
-                        <button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg uppercase orb cursor-pointer transition-all duration-300 mt-2 text-xs sm:text-sm shadow-sm active:scale-95 flex items-center justify-center gap-2">
+                        <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-lg uppercase orb cursor-pointer transition-all duration-300 mt-2 text-xs sm:text-sm shadow-sm active:scale-95 flex items-center justify-center gap-2">
                             Schedule Consultation
                         </button>
                     </div>

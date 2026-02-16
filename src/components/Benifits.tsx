@@ -30,7 +30,7 @@ const Benefits = () => {
             <div className="container mx-auto px-4">
 
                 {/* Title */}
-                <h2 className="text-center text-3xl font-bold text-[#2E054E] mb-10">
+                <h2 className="text-center text-3xl font-bold text-[#050c4e] mb-10">
                     Spinny benefits
                 </h2>
 
@@ -39,7 +39,7 @@ const Benefits = () => {
                     {benefits.map((item) => (
                         <div
                             key={item.id}
-                            className="bg-[#3D0469] rounded-2xl h-[200px] flex flex-col items-center justify-center p-4 transition-transform hover:-translate-y-1 duration-300 shadow-sm"
+                            className="bg-[#050c4e] rounded-2xl h-[200px] flex flex-col items-center justify-center p-4 transition-transform hover:-translate-y-1 duration-300 shadow-sm"
                         >
                             {/* Lottie Animation */}
                             <div className="w-30 h-30 mb-2">

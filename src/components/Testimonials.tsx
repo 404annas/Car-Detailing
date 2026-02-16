@@ -63,7 +63,7 @@ const Testimonials = () => {
                         TESTIMONIALS
                     </h2>
 
-                    <button className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
+                    <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-all duration-300 cursor-pointer orb sm:text-base text-sm sm:w-fit w-full">
                         CONTACT US
                     </button>
                 </div>                {/* Grid */}
@@ -78,7 +78,7 @@ const Testimonials = () => {
                                 {[...Array(5)].map((_, i) => (
                                     <span
                                         key={i}
-                                        className={`text-sm ${i < item.rating ? "text-green-500" : "text-green-500"
+                                        className={`text-sm ${i < item.rating ? "text-blue-500" : "text-blue-500"
                                             }`}
                                     >
                                         <Star size={20} />

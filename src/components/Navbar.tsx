@@ -63,15 +63,15 @@ const Navbar = () => {
                         <button 
                             key={item.name}
                             onClick={() => handleClick(item.href)}
-                            className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-green-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-green-500 after:transition-all after:duration-500 hover:after:w-full"
+                            className="relative cursor-pointer font-medium transition-colors duration-500 hover:text-blue-500 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-500 hover:after:w-full"
                         >
                             {item.name}
                         </button>
                     ))}
                 </div>
 
-                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-green-500 px-6 py-3 cursor-pointer group" onClick={() => handleClick("#contact")}>
-                    <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
+                <div className="hidden lg:block relative overflow-hidden rounded-lg border border-blue-500 px-6 py-3 cursor-pointer group" onClick={() => handleClick("#contact")}>
+                    <span className="absolute left-0 top-0 h-full w-0 bg-blue-500 transition-all duration-500 group-hover:w-full" />
                     <div className="relative z-10 flex items-center gap-2 orb font-medium">
                         <p>Contact Us</p>
                         <Contact2 size={22} />
@@ -95,7 +95,7 @@ const Navbar = () => {
                         <button 
                             key={item.name}
                             onClick={() => handleClick(item.href)}
-                            className="cursor-pointer hover:text-green-500 transition-colors text-left"
+                            className="cursor-pointer hover:text-blue-500 transition-colors text-left"
                         >
                             {item.name}
                         </button>
@@ -103,10 +103,10 @@ const Navbar = () => {
                 </div>
                 <div className="absolute bottom-8 left-6 right-6">
                     <div 
-                        className="relative overflow-hidden rounded-lg border border-green-500 px-6 py-4 cursor-pointer group"
+                        className="relative overflow-hidden rounded-lg border border-blue-500 px-6 py-4 cursor-pointer group"
                         onClick={() => handleClick("#contact")}
                     >
-                        <span className="absolute left-0 top-0 h-full w-0 bg-green-500 transition-all duration-500 group-hover:w-full" />
+                        <span className="absolute left-0 top-0 h-full w-0 bg-blue-500 transition-all duration-500 group-hover:w-full" />
                         <div className="relative z-10 flex items-center justify-center gap-2 text-white orb font-medium">
                             <p>Contact Us</p>
                             <Contact2 size={22} />

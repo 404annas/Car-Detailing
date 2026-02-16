@@ -93,8 +93,8 @@ const Offering = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Car className="text-green-500" size={22} />
-            <span className="text-green-500 orb font-bold uppercase tracking-widest text-sm">
+            <Car className="text-blue-500" size={22} />
+            <span className="text-blue-500 orb font-bold uppercase tracking-widest text-sm">
               Your Gateway to Global Automotive Excellence
             </span>
           </div>
@@ -113,7 +113,7 @@ const Offering = () => {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className={`group relative bg-[#161621] rounded-[30px] overflow-hidden border-b-[8px] border-green-500 transition-transform duration-300 hover:-translate-y-2 shadow-sm`}
+              className={`group relative bg-[#161621] rounded-[30px] overflow-hidden border-b-[8px] border-blue-500 transition-transform duration-300 hover:-translate-y-2 shadow-sm`}
             >
               {/* Geometric Background Effect */}
               <div className="absolute inset-0 pointer-events-none">
@@ -127,8 +127,8 @@ const Offering = () => {
 
               {/* Content */}
               <div className="relative p-6 pt-8 pb-6">
-                <div className="text-green-500 mb-10 relative z-10 inline-block">
-                  <div className="absolute -left-3 -top-3 w-[64px] h-[64px] rounded-full border border-dashed border-green-500/50 animate-spin-slow"></div>
+                <div className="text-blue-500 mb-10 relative z-10 inline-block">
+                  <div className="absolute -left-3 -top-3 w-[64px] h-[64px] rounded-full border border-dashed border-blue-500/50 animate-spin-slow"></div>
                   <div className="relative z-10">{service.icon}</div>
                 </div>
 
@@ -136,7 +136,7 @@ const Offering = () => {
                   {service.id}
                 </div>
 
-                <h3 className="text-green-500 orb text-base font-bold mb-3 transition-colors group-hover:text-white duration-300">
+                <h3 className="text-blue-500 orb text-base font-bold mb-3 transition-colors group-hover:text-white duration-300">
                   {service.title}
                 </h3>
 
@@ -146,7 +146,7 @@ const Offering = () => {
 
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="text-green-500 hover:underline hover:translate-y-1 transition-all duration-300 flex items-center gap-2 text-sm cursor-pointer"
+                  className="text-blue-500 hover:underline hover:translate-y-1 transition-all duration-300 flex items-center gap-2 text-sm cursor-pointer"
                 >
                   Read More <ArrowRight size={18} />
                 </button>
@@ -171,16 +171,16 @@ const Offering = () => {
             {/* 1. Left Side: Visual/Brand Section (Hidden on small mobile) */}
             <div className="relative w-full md:w-1/4 bg-[#161621] p-8 flex flex-col justify-between border-r border-white/5 overflow-hidden">
               {/* Abstract Background Glow */}
-              <div className="absolute -top-20 -left-20 w-64 h-64 bg-green-500/20 rounded-full blur-[50px]"></div>
+              <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-500/20 rounded-full blur-[50px]"></div>
 
               <div className="relative z-10">
-                <div className="p-5 bg-white/5 rounded-3xl inline-block border border-white/10 text-green-500 mb-6 shadow-2xl">
+                <div className="p-5 bg-white/5 rounded-3xl inline-block border border-white/10 text-blue-500 mb-6 shadow-2xl">
                   {selectedService.icon}
                 </div>
                 <h4 className="text-white/30 orb font-black text-6xl select-none mb-2">
                   {selectedService.id}
                 </h4>
-                <p className="text-green-500 orb font-bold tracking-widest uppercase text-xs">
+                <p className="text-blue-500 orb font-bold tracking-widest uppercase text-xs">
                   Elite Service Detail
                 </p>
               </div>
@@ -198,7 +198,7 @@ const Offering = () => {
               {/* Close Icon - Styled */}
               <button
                 onClick={() => setSelectedService(null)}
-                className="absolute top-6 right-8 text-gray-400 hover:text-green-500 transition-all duration-300 cursor-pointer z-[110] bg-white/5 p-2 rounded-full border border-white/10 hover:rotate-90"
+                className="absolute top-6 right-8 text-gray-400 hover:text-blue-500 transition-all duration-300 cursor-pointer z-[110] bg-white/5 p-2 rounded-full border border-white/10 hover:rotate-90"
               >
                 <X size={24} />
               </button>
@@ -209,7 +209,7 @@ const Offering = () => {
                   {selectedService.title}
                 </h3>
 
-                <div className="w-20 h-1 bg-green-500 mb-6 rounded-full"></div>
+                <div className="w-20 h-1 bg-blue-500 mb-6 rounded-full"></div>
 
                 <p className="text-gray-300 text-base leading-relaxed mb-8 font-medium">
                   {selectedService.fullDetails}
@@ -219,14 +219,14 @@ const Offering = () => {
                   {selectedService.points?.map((point, i) => (
                     <div
                       key={i}
-                      className="group/point relative p-5 bg-white/5 rounded-xl border border-white/5 hover:border-green-500/30 transition-all duration-300"
+                      className="group/point relative p-5 bg-white/5 rounded-xl border border-white/5 hover:border-blue-500/30 transition-all duration-300"
                     >
                       <div className="flex items-start gap-5">
-                        <div className="mt-1 flex-shrink-0 bg-green-500/10 p-2 rounded-lg text-green-500">
+                        <div className="mt-1 flex-shrink-0 bg-blue-500/10 p-2 rounded-lg text-blue-500">
                           <CheckCircle2 size={18} />
                         </div>
                         <div>
-                          <h5 className="text-white font-bold orb text-sm uppercase tracking-wide mb-2 group-hover/point:text-green-400 transition-colors">
+                          <h5 className="text-white font-bold orb text-sm uppercase tracking-wide mb-2 group-hover/point:text-blue-400 transition-colors">
                             {point.label}
                           </h5>
                           <p className="text-gray-400 text-sm leading-relaxed">
@@ -245,9 +245,9 @@ const Offering = () => {
 
       {/* Footer Banner */}
       <div className="p-10 bg-gradient-to-br from-[#0B1324] to-[#070E1A] max-w-6xl mx-auto text-white rounded-3xl mt-10 text-center relative overflow-hidden group">
-        <h1 className="uppercase text-4xl font-bold pb-4">Ready to find your <span className="text-green-500">dream car ?</span></h1>
+        <h1 className="uppercase text-4xl font-bold pb-4">Ready to find your <span className="text-blue-500">dream car ?</span></h1>
         <p className="max-w-4xl mx-auto text-lg leading-6 pb-8">Stop searching and start driving. Visit our Sydney showroom to view our current stock, or contact our team to discuss sourcing a specific vehicle from overseas.</p>
-        <button className="px-8 py-3 bg-green-500 hover:bg-green-600 shadow-[0_10px_30px_-10px_rgba(34,197,94,0.5)] transition-all duration-300 cursor-pointer rounded-xl text-white text-lg uppercase font-semibold">Drive the Elite way</button>
+        <button className="px-8 py-3 bg-blue-500 hover:bg-blue-600 shadow-[0_10px_30px_-10px_rgba(34,197,94,0.5)] transition-all duration-300 cursor-pointer rounded-xl text-white text-lg uppercase font-semibold">Drive the Elite way</button>
       </div>
     </section>
   );
