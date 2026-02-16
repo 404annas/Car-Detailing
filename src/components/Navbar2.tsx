@@ -34,7 +34,7 @@ const Navbar2 = () => {
 
             {/* --- Top Blue Bar --- */}
             {/* Logo ko bahar dikhane ke liye 'overflow-visible' zaroori hai */}
-            <div className={`bg-[#3A9BD5] flex items-center px-4 md:px-8 relative transition-all duration-500 ${isScrolled ? "h-0 opacity-0 invisible" : "h-[60px] opacity-100 visible"}`}>
+            <div className={`bg-[#050c4e] flex items-center px-4 md:px-8 relative transition-all duration-500 ${isScrolled ? "h-0 opacity-0 invisible" : "h-[60px] opacity-100 visible"}`}>
 
                 {/* Navigation Links */}
                 <div className="flex items-center ml-36 space-x-6 text-white font-bold text-sm overflow-x-auto no-scrollbar">
@@ -51,7 +51,7 @@ const Navbar2 = () => {
 
                 {/* Right Side Icons & Selectors */}
                 <div className="ml-auto flex items-center space-x-3">
-                    <div className="bg-[#56A9DC] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#448fbe] transition-colors duration-300">
+                    <div className="bg-[#051072] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#020f86] transition-colors duration-300">
                         <div className="bg-white rounded-full p-1 mr-2">
                             <DollarSign size={14} className="text-[#3A9BD5]" />
                         </div>
@@ -61,7 +61,7 @@ const Navbar2 = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#56A9DC] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#448fbe] transition-colors duration-300">
+                    <div className="bg-[#051072] text-white flex items-center px-3 py-1.5 rounded-full cursor-pointer hover:bg-[#020f86] transition-colors duration-300">
                         <MapPin size={18} className="mr-2" />
                         <div className="flex flex-col leading-none pr-4">
                             <span className="text-[10px] opacity-90 font-medium">Delivery To:</span>
@@ -76,7 +76,7 @@ const Navbar2 = () => {
                         </span> */}
                     </div>
 
-                    <div className="flex items-center bg-[#56A9DC] rounded-full px-0.5 py-0.5 cursor-pointer border border-[#8ec6e8]">
+                    <div className="flex items-center bg-[#020f86] rounded-full px-0.5 py-0.5 cursor-pointer border border-[#8ec6e8]">
                         {/* <Menu size={20} className="text-white mr-1" /> */}
                         <Link href="/cart" className="bg-white rounded-full p-2">
                             <ShoppingCart size={20} className="text-gray-700" />
@@ -136,7 +136,7 @@ const Navbar2 = () => {
                     <span className="text-sm text-gray-600 font-bold">More filters</span>
                 </button>
 
-                <button className="bg-[#0D4B8E] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#0a3a6e] transition-colors cursor-pointer text-sm">
+                <button className="bg-[#050c4e] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#020f86] transition-colors duration-300 cursor-pointer text-sm">
                     Search
                 </button>
                 <button className="text-gray-500 cursor-pointer text-sm font-bold hover:underline px-2">

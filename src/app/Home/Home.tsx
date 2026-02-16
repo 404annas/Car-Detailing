@@ -1,6 +1,7 @@
 "use client";
 
 import About from '@/components/About'
+import Assistance from '@/components/Assistance';
 import Benifits from '@/components/Benifits';
 import BgSteps from '@/components/BgSteps'
 import Cars from '@/components/Cars'
@@ -15,6 +16,8 @@ import HeroBottom from '@/components/HeroBottom';
 import Navbar from '@/components/Navbar'
 import Numbers from '@/components/Numbers'
 import Offering from '@/components/Offering'
+import Process from '@/components/Process';
+import SellCar from '@/components/SellCar';
 import SixSteps from '@/components/SixSteps';
 import StepCards from '@/components/StepCards'
 import Steps from '@/components/Steps'
@@ -44,8 +47,6 @@ const Home = () => {
           <BgSteps />
         </div> */}
 
-      <Benifits />
-
       <div id="featured-cars">
         <FeaturedCars />
       </div>
@@ -55,15 +56,19 @@ const Home = () => {
       <div id="how-it-works">
         <Steps />
       </div>
-      <div id="testimonials">
-        <Testimonials2 />
-      </div>
       <div id="faqs">
         <Faqs />
+      </div>
+      <Benifits />
+      <SellCar />
+      <div id="testimonials">
+        <Testimonials2 />
       </div>
       <div id="contact">
         <Contact />
       </div>
+      <Process />
+      <Assistance />
       <Footer />
     </div>
   )

@@ -23,13 +23,13 @@ const WorkSection = () => {
             id: "2",
             title: "We De-Risk the Import Process (Security)",
             desc: "We transform the grey market into a transparent and safe transaction through forensic inspections, auction sheet translations, odometer verification, and full Australian Design Rules (ADR) compliance.",
-            img: work2,
+            img: work3,
         },
         {
             id: "3",
             title: "We Handle Logistics & Red Tape (Convenience)",
             desc: "From the auction floor in Tokyo to your driveway in Australia, we manage shipping, customs clearance, import taxes, insurance, and secure door-to-door delivery nationwide.",
-            img: work3,
+            img: work2,
         },
         {
             id: "4",
@@ -49,13 +49,13 @@ const WorkSection = () => {
         <section className="py-10 px-4 bg-white">
             {/* --- Heading Part --- */}
             <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold text-[#1a064e] mb-4">
+                <h2 className="text-4xl font-bold text-[#050c4e] mb-4">
                     More Than Just a Dealership: We Are Your Automotive Partners
                 </h2>
                 <p className="text-gray-500 max-w-3xl mx-auto text-base leading-relaxed">
                     At Elite Motor Cars, we define value as the intersection of access, peace of mind, and simplicity. Buying a specialized import or luxury European vehicle can be complex and risky — our role is to absorb that complexity so you can simply enjoy the drive.
                 </p>
-                <button className="mt-8 border-2 border-[#6b21a8] text-[#6b21a8] font-bold py-2 px-8 rounded-lg hover:bg-[#6b21a8] hover:text-white transition-all text-sm cursor-pointer duration-300">
+                <button className="mt-8 border-2 border-[#050c4e] text-[#050c4e] font-bold py-2 px-8 rounded-lg hover:bg-[#050c4e] hover:text-white transition-all text-sm cursor-pointer duration-300">
                     Experience the Elite Difference &gt;
                 </button>
             </div>
@@ -85,7 +85,7 @@ const WorkSection = () => {
 
                                 {/* Actual Content */}
                                 <div className={`relative z-10 ${index % 2 !== 0 ? "right-24" : "left-50"}`}>
-                                    <h3 className="text-xl font-bold text-[#1a064e] mb-4">{step.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#050c4e] mb-4">{step.title}</h3>
                                     <p className="text-gray-600 text-sm leading-normal max-w-sm">
                                         {step.desc}
                                     </p>
@@ -94,7 +94,7 @@ const WorkSection = () => {
 
                             {/* Image Side */}
                             <div className="flex-1 flex justify-center z-10">
-                                <div className="relative w-[320px] h-[200px]">
+                                <div className="relative w-[320px] h-[250px]">
                                     <Image
                                         src={step.img}
                                         alt={step.title}
