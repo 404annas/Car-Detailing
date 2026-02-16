@@ -1,6 +1,7 @@
 "use client";
 
 import About from '@/components/About'
+import Benifits from '@/components/Benifits';
 import BgSteps from '@/components/BgSteps'
 import Cars from '@/components/Cars'
 import Contact from '@/components/Contact'
@@ -22,44 +23,47 @@ import Testimonials from '@/components/Testimonials'
 const Home = () => {
   return (
     <div>
-        {/* <Hero /> */}
-        <div id="home">
-          <Hero3 />
-        </div>
-        <HeroBottom />
-        <SixSteps />
-        {/* <About /> */}
-        {/* <div id="our-fleet">
+      {/* <Hero /> */}
+      <div id="home">
+        <Hero3 />
+      </div>
+      <HeroBottom />
+      <SixSteps />
+      {/* <About /> */}
+      {/* <div id="our-fleet">
           <Cars />
         </div> */}
-        {/* <div id="about">
+      {/* <div id="about">
           <Offering />
         </div> */}
-        {/* <div id="process">
+      {/* <div id="process">
           <StepCards />
         </div> */}
-        {/* <div id="steps">
+      {/* <div id="steps">
           <BgSteps />
         </div> */}
-        <div id="featured-cars">
-          <FeaturedCars />
-        </div>
-        <div id="numbers">
-          <Numbers />
-        </div>
-        <div id="how-it-works">
-          <Steps />
-        </div>
-        <div id="testimonials">
-          <Testimonials />
-        </div>
-        <div id="faqs">
-          <Faqs />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
-        <Footer />
+
+      <Benifits />
+
+      <div id="featured-cars">
+        <FeaturedCars />
+      </div>
+      <div id="numbers">
+        <Numbers />
+      </div>
+      <div id="how-it-works">
+        <Steps />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="faqs">
+        <Faqs />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer />
     </div>
   )
 }
