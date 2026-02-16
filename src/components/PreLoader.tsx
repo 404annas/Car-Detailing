@@ -94,7 +94,7 @@ const PreLoader = () => {
 
                 {/* THE MOVING ROAD */}
                 <div className="w-48 h-1 bg-gray-200 mt-[-2px] rounded-full overflow-hidden relative">
-                    <div className="absolute top-0 left-0 h-full w-full bg-[linear-gradient(90deg,transparent_50%,#22c55e_50%)] bg-[length:20px_100%] animate-road-move"></div>
+                    <div className="absolute top-0 left-0 h-full w-full bg-[linear-gradient(90deg,transparent_50%,#3b82f6_50%)] bg-[length:20px_100%] animate-road-move"></div>
                 </div>
 
             </div>

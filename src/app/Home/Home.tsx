@@ -19,6 +19,7 @@ import SixSteps from '@/components/SixSteps';
 import StepCards from '@/components/StepCards'
 import Steps from '@/components/Steps'
 import Testimonials from '@/components/Testimonials'
+import Testimonials2 from '@/components/Testimonials2';
 
 const Home = () => {
   return (
@@ -55,7 +56,7 @@ const Home = () => {
         <Steps />
       </div>
       <div id="testimonials">
-        <Testimonials />
+        <Testimonials2 />
       </div>
       <div id="faqs">
         <Faqs />
