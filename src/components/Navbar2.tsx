@@ -38,9 +38,9 @@ const Navbar2 = () => {
 
                 {/* Navigation Links */}
                 <div className="flex items-center ml-36 space-x-6 text-white font-bold text-sm overflow-x-auto no-scrollbar">
-                    <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap ">Available Cars</a>
-                    <Link href="/work" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Work</Link>
-                    <Link href="/buy" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How To Buy</Link>
+                    <a href="#featured-cars" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap ">Available Cars</a>
+                    <Link href="/how-we-deliver" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Deliver</Link>
+                    <Link href="/choose-us" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Why Choose Us</Link>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Testimonials</a>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Car Talk</a>
                     <div className="flex items-center cursor-pointer hover:opacity-80 transition-all duration-300">
@@ -78,9 +78,9 @@ const Navbar2 = () => {
 
                     <div className="flex items-center bg-[#56A9DC] rounded-full px-0.5 py-0.5 cursor-pointer border border-[#8ec6e8]">
                         {/* <Menu size={20} className="text-white mr-1" /> */}
-                        <div className="bg-white rounded-full p-2">
+                        <Link href="/cart" className="bg-white rounded-full p-2">
                             <ShoppingCart size={20} className="text-gray-700" />
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

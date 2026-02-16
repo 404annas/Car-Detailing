@@ -131,7 +131,7 @@ const CartPage = () => {
     <div className="min-h-screen bg-gray-50 pb-10">
 
       {/* --- Top Header Section --- */}
-      <div className="bg-white border-b border-gray-200 pt-4 pb-4 sticky top-0 z-10">
+      <div className="bg-white border-b border-gray-200 pt-4 pb-4 z-10">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>

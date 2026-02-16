@@ -32,15 +32,15 @@ const Home = () => {
         {/* <div id="our-fleet">
           <Cars />
         </div> */}
-        <div id="about">
+        {/* <div id="about">
           <Offering />
-        </div>
-        <div id="process">
+        </div> */}
+        {/* <div id="process">
           <StepCards />
-        </div>
-        <div id="steps">
+        </div> */}
+        {/* <div id="steps">
           <BgSteps />
-        </div>
+        </div> */}
         <div id="featured-cars">
           <FeaturedCars />
         </div>
