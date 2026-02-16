@@ -40,7 +40,7 @@ const Footer2 = () => {
                 <div className="flex-shrink-0">
                     <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-6">Navigation</h3>
                     <ul className="space-y-3 text-gray-300 text-[15px]">
-                        {["Home", "Available Cars", "How We Deliver", "Why Choose Us", "Testimonials", "Faqs"].map((item) => (
+                        {["Home", "Available Cars", "How We Deliver", "Why Choose Us", "Testimonials", "FAQ's"].map((item) => (
                             <li key={item}>
                                 <a href="#" className="hover:text-white transition-colors">{item}</a>
                             </li>
@@ -50,15 +50,15 @@ const Footer2 = () => {
 
                 <div className="flex-shrink-0">
                     <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-6">Contact</h3>
-                    <div className='flex items-center gap-2 pb-2'>
+                    <div className='flex items-center gap-2 mb-2 bg-blue-900 rounded-xl px-6 py-4'>
                         <Mail size={20}/>
                         <p>contact@elitemotorcars.com.au</p>
                     </div>
-                    <div className='flex items-center gap-2 pb-2'>
+                    <div className='flex items-center gap-2 mb-2 bg-blue-900 rounded-xl px-6 py-4'>
                         <Phone size={20}/>
                         <p>+61 466 318 074</p>
                     </div>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-2 mb-2 bg-blue-900 rounded-xl px-6 py-4'>
                         <MapPin size={20}/>
                         <p>164-166 High Street, Australia</p>
                     </div>

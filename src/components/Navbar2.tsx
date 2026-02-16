@@ -44,7 +44,7 @@ const Navbar2 = () => {
                     <Link href="/how-we-deliver" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Deliver</Link>
                     <Link href="/choose-us" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Why Choose Us</Link>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Testimonials</a>
-                    <a href="/faqs" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Faqs</a>
+                    <a href="/faqs" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">FAQ's</a>
                 </div>
 
                 {/* Right Side Icons & Selectors */}
