@@ -78,7 +78,7 @@ const Testimonials2 = () => {
   };
 
   return (
-    <section className="w-full py-10 bg-white overflow-hidden">
+    <section className="w-full py-10 bg-[#EBF2FB] overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Header with Lines and Navigation Arrows */}
@@ -86,10 +86,10 @@ const Testimonials2 = () => {
           {/* Background Line */}
           <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-gray-200 -z-10 hidden md:block"></div>
 
-          <div className="bg-white pr-6 z-10 mx-auto md:mx-0">
+          <div className="bg-[#EBF2FB] pr-6 z-10 mx-auto md:mx-0">
             {/* Centered Title logic roughly matching image */}
             <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center pointer-events-none hidden md:block">
-              <span className="bg-white px-6 text-2xl sm:text-3xl font-bold text-[#050c4e]">
+              <span className="bg-[#EBF2FB] px-6 text-2xl sm:text-3xl font-bold text-[#050c4e]">
                 User Reviews & Ratings
               </span>
             </div>
@@ -100,18 +100,18 @@ const Testimonials2 = () => {
           </div>
 
           {/* Navigation Arrows (Top Right) */}
-          <div className="bg-white pl-6 z-10 hidden md:flex items-center gap-4">
+          <div className="bg-[#EBF2FB] pl-6 z-10 hidden md:flex items-center gap-4">
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
-              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex === 0 ? 'text-gray-300 bg-gray-50 hover:cursor-not-allowed' : 'text-[#050c4e] hover:bg-gray-100'}`}
+              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex === 0 ? 'text-gray-300 bg-gray-100 hover:cursor-not-allowed' : 'text-[#050c4e] hover:bg-gray-100'}`}
             >
               <ChevronLeft size={24} strokeWidth={3} />
             </button>
             <button
               onClick={handleNext}
               disabled={currentIndex >= maxIndex}
-              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex >= maxIndex ? 'text-gray-300 bg-gray-50 hover:cursor-not-allowed' : 'text-[#050c4e] hover:bg-gray-100'}`}
+              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex >= maxIndex ? 'text-gray-300 bg-gray-100 hover:cursor-not-allowed' : 'text-[#050c4e] hover:bg-gray-100'}`}
             >
               <ChevronRight size={24} strokeWidth={3} />
             </button>
@@ -123,7 +123,7 @@ const Testimonials2 = () => {
 
           {/* 1. Left Side: Rating Summary Box */}
           <div className="shrink-0 w-full lg:w-[280px]">
-            <div className="bg-[#F9F9F9] rounded-xl p-8 flex flex-col items-center justify-center h-full min-h-[200px]">
+            <div className="bg-[#d1e4fd] rounded-xl p-8 flex flex-col items-center justify-center h-full min-h-[200px]">
               <span className="text-[#050c4e] text-6xl font-bold mb-2">4.9</span>
               <div className="flex gap-1 mb-2">
                 {/* 5 Big Stars */}

@@ -18,11 +18,6 @@ const Benefits = () => {
             src: "/lottie/benifit3.lottie",
             title: "Security",
         },
-        {
-            id: 4,
-            src: "/lottie/benifit4.lottie",
-            title: "Simplicity",
-        },
     ];
 
     return (
@@ -35,7 +30,7 @@ const Benefits = () => {
                 </h2>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 max-w-xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-w-xl mx-auto">
                     {benefits.map((item) => (
                         <div
                             key={item.id}

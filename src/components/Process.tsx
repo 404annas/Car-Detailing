@@ -5,7 +5,7 @@ const Process = () => {
     return (
         <div className="flex items-center justify-center py-10 bg-gray-50">
             {/* Main Container: White box with shadow and rounded corners */}
-            <div className="bg-white rounded-2xl border border-gray-100 flex flex-col md:flex-row items-center max-w-5xl w-full p-6 md:p-8 overflow-hidden relative">
+            <div className="bg-white rounded-2xl border border-gray-400 flex flex-col md:flex-row items-center max-w-5xl w-full p-6 md:p-8 overflow-hidden relative">
                 {/* Left Side: Illustration */}
                 <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0 z-10">
                     <img
