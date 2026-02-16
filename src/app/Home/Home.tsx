@@ -12,7 +12,6 @@ import Hero2 from '@/components/Hero2'
 import Hero3 from '@/components/Hero3';
 import HeroBottom from '@/components/HeroBottom';
 import Navbar from '@/components/Navbar'
-import Navbar2 from '@/components/Navbar2';
 import Numbers from '@/components/Numbers'
 import Offering from '@/components/Offering'
 import SixSteps from '@/components/SixSteps';
@@ -23,7 +22,6 @@ import Testimonials from '@/components/Testimonials'
 const Home = () => {
   return (
     <div>
-        <Navbar2 />
         {/* <Hero /> */}
         <div id="home">
           <Hero3 />

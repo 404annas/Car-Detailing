@@ -95,14 +95,14 @@ const Navbar2 = () => {
                             : "-top-12 left-6 w-[100px] h-[100px]"
                         }`}
                 >
-                    <div className="relative w-[90%] h-[90%]">
+                    <Link href="/" className="relative w-[90%] h-[90%]">
                         <Image
                             src={logo}
                             alt="Car From Japan"
                             fill
                             className="object-contain rounded-full"
                         />
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Spacing adjustments to match logo movement */}

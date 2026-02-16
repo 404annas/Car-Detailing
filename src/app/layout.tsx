@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Orbitron, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { Toaster } from 'sonner';
+import Navbar2 from '@/components/Navbar2';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,8 +41,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${orbitron.variable} antialiased`}
       >
+        <Navbar2 />
         {children}
-        <Toaster 
+        <Toaster
           position="bottom-right"
           richColors={true}
           closeButton={true}
