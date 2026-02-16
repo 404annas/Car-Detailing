@@ -55,16 +55,16 @@ const Home = () => {
       </div> */}
       <Benifits />
       <SellCar />
-      <Process />
       {/* <div id="how-it-works">
         <Steps />
-      </div> */}
+        </div> */}
       {/* <div id="faqs">
         <Faqs />
-      </div> */}
+        </div> */}
       <div id="testimonials">
         <Testimonials2 />
       </div>
+        <Process />
       {/* <div id="contact">
         <Contact />
       </div> */}

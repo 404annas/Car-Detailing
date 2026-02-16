@@ -61,7 +61,7 @@ const HowToBuy = () => {
                             </div>
 
                             {/* Step Text */}
-                            <div className="px-3 pr-0 text-white text-xs font-semibold leading-tight">
+                            <div className="px-3 pr-0 text-white text-xs font-bold leading-tight">
                                 {step.text}
                             </div>
                         </div>

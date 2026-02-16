@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Poppins, Orbitron, Inter_Tight } from "next/font/goo
 import "./globals.css";
 import { Toaster } from 'sonner';
 import Navbar2 from '@/components/Navbar2';
+import Process from "@/components/Process";
+import Assistance from "@/components/Assistance";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,6 +45,8 @@ export default function RootLayout({
       >
         <Navbar2 />
         {children}
+        <Process />
+        <Assistance />
         <Toaster
           position="bottom-right"
           richColors={true}

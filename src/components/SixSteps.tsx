@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import sixBgImg from "@/assets/sixBg.jpg";
+import Link from "next/link";
 
 const SixSteps = () => {
     const steps = [
@@ -14,7 +15,7 @@ const SixSteps = () => {
     ];
 
     return (
-        <section className="relative w-full py-10 md:py-20 overflow-hidden">
+        <section className="relative w-full py-10 md:pt-20 pb-14 overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -62,7 +63,13 @@ const SixSteps = () => {
                         </div>
                     ))}
                 </div>
+                <Link href={"how-we-deliver"} className="flex items-center justify-center mt-16">
+                    <button className="bg-gradient-to-r from-[#3b82f6] to-[#1a4fc2] text-white font-semibold tracking-wide px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 active:scale-95 cursor-pointer">
+                        How We Deliver
+                    </button>
+                </Link>
             </div>
+
         </section>
     );
 };

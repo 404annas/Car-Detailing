@@ -151,7 +151,7 @@ const BuySteps = () => {
                                             WebkitClipPath: 'polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%)'
                                         }}
                                     >
-                                        Step {step.id}: {step.title}
+                                        {step.title}
                                     </div>
                                 </div>
 

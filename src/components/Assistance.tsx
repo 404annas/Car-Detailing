@@ -17,7 +17,7 @@ const Assistance = () => {
                 {/* Call Us Card */}
                 <div className="flex-1 flex items-center p-4 sm:p-6 border border-gray-200 rounded-2xl cursor-pointer">
                     {/* Circular Icon Background (Pinkish) */}
-                    <div className="w-12 h-12 rounded-full bg-[#b0cbfd] flex items-center justify-center mr-4">
+                    <div className="w-14 h-12 rounded-full bg-[#b0cbfd] flex items-center justify-center mr-4">
                         <Phone size={20} className="text-[#2d1052] fill-[#2d1052]" />
                     </div>
                     <div className='flex justify-between items-center w-full'>
