@@ -10,6 +10,7 @@ import work4 from "@/assets/work4.svg";
 import work5 from "@/assets/work5.svg";
 import line1 from "@/assets/line1.svg";
 import line2 from "@/assets/line2.svg";
+import Numbers from '@/components/Numbers';
 
 const WorkSection = () => {
     const steps = [
@@ -46,82 +47,85 @@ const WorkSection = () => {
     ];
 
     return (
-        <section className="py-10 px-4 bg-white">
-            {/* --- Heading Part --- */}
-            <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold text-[#050c4e] mb-4">
-                    More Than Just a Dealership: We Are Your Automotive Partners
-                </h2>
-                <p className="text-gray-500 max-w-3xl mx-auto text-base leading-relaxed">
-                    At Elite Motor Cars, we define value as the intersection of access, peace of mind, and simplicity. Buying a specialized import or luxury European vehicle can be complex and risky — our role is to absorb that complexity so you can simply enjoy the drive.
-                </p>
-                <button className="mt-8 border-2 border-[#050c4e] text-[#050c4e] font-bold py-2 px-8 rounded-lg hover:bg-[#050c4e] hover:text-white transition-all text-sm cursor-pointer duration-300">
-                    Experience the Elite Difference &gt;
-                </button>
-            </div>
+        <>
+            <section className="py-10 px-4 bg-white">
+                {/* --- Heading Part --- */}
+                <div className="text-center mb-10">
+                    <h2 className="text-4xl font-bold text-[#050c4e] mb-4">
+                        More Than Just a Dealership: We Are Your Automotive Partners
+                    </h2>
+                    <p className="text-gray-500 max-w-3xl mx-auto text-base leading-relaxed">
+                        At Elite Motor Cars, we define value as the intersection of access, peace of mind, and simplicity. Buying a specialized import or luxury European vehicle can be complex and risky — our role is to absorb that complexity so you can simply enjoy the drive.
+                    </p>
+                    <button className="mt-8 border-2 border-[#050c4e] text-[#050c4e] font-bold py-2 px-8 rounded-lg hover:bg-[#050c4e] hover:text-white transition-all text-sm cursor-pointer duration-300">
+                        Experience the Elite Difference &gt;
+                    </button>
+                </div>
 
-            {/* --- Steps Container --- */}
-            <div className="max-w-5xl mx-auto">
-                {steps.map((step, index) => (
-                    <div key={step.id} className="flex flex-col">
-                        {/* Main Content Row */}
-                        <div className={`flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24 
+                {/* --- Steps Container --- */}
+                <div className="max-w-5xl mx-auto">
+                    {steps.map((step, index) => (
+                        <div key={step.id} className="flex flex-col">
+                            {/* Main Content Row */}
+                            <div className={`flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24 
               ${index % 2 !== 0 ? "md:flex-row-reverse" : "text-left"}`}>
 
-                            {/* Text Side with Hollow Number */}
-                            <div className="flex-1 relative group">
-                                {/* Hollow/Outline Number - Picture style positioning */}
-                                <span
-                                    className={`absolute top-[-20px] text-[160px] font-black leading-none select-none z-0
+                                {/* Text Side with Hollow Number */}
+                                <div className="flex-1 relative group">
+                                    {/* Hollow/Outline Number - Picture style positioning */}
+                                    <span
+                                        className={`absolute top-[-20px] text-[160px] font-black leading-none select-none z-0
                   ${index % 2 !== 0 ? "right-15" : "left-15"}
                   `}
-                                    style={{
-                                        WebkitTextStroke: "1px #9ca3af", // Light grey outline
-                                        color: "transparent", // Transparent inside
-                                    }}
-                                >
-                                    {step.id}
-                                </span>
+                                        style={{
+                                            WebkitTextStroke: "1px #9ca3af", // Light grey outline
+                                            color: "transparent", // Transparent inside
+                                        }}
+                                    >
+                                        {step.id}
+                                    </span>
 
-                                {/* Actual Content */}
-                                <div className={`relative z-10 ${index % 2 !== 0 ? "right-24" : "left-50"}`}>
-                                    <h3 className="text-xl font-bold text-[#050c4e] mb-4">{step.title}</h3>
-                                    <p className="text-gray-600 text-sm leading-normal max-w-sm">
-                                        {step.desc}
-                                    </p>
+                                    {/* Actual Content */}
+                                    <div className={`relative z-10 ${index % 2 !== 0 ? "right-24" : "left-50"}`}>
+                                        <h3 className="text-xl font-bold text-[#050c4e] mb-4">{step.title}</h3>
+                                        <p className="text-gray-600 text-sm leading-normal max-w-sm">
+                                            {step.desc}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Image Side */}
+                                <div className="flex-1 flex justify-center z-10">
+                                    <div className="relative w-[320px] h-[250px]">
+                                        <Image
+                                            src={step.img}
+                                            alt={step.title}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
                             </div>
 
-                            {/* Image Side */}
-                            <div className="flex-1 flex justify-center z-10">
-                                <div className="relative w-[320px] h-[250px]">
-                                    <Image
-                                        src={step.img}
-                                        alt={step.title}
-                                        fill
-                                        className="object-contain"
-                                    />
+                            {/* Dotted Lines (1 -> 2 -> 1 -> 2) */}
+                            {index < steps.length - 1 && (
+                                <div className="w-full flex justify-center">
+                                    <div className="w-[80%] opacity-60">
+                                        <Image
+                                            src={index % 2 === 0 ? line1 : line2}
+                                            alt="separator"
+                                            className="w-full h-auto"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
+                            )}
+
                         </div>
-
-                        {/* Dotted Lines (1 -> 2 -> 1 -> 2) */}
-                        {index < steps.length - 1 && (
-                            <div className="w-full flex justify-center">
-                                <div className="w-[80%] opacity-60">
-                                    <Image
-                                        src={index % 2 === 0 ? line1 : line2}
-                                        alt="separator"
-                                        className="w-full h-auto"
-                                    />
-                                </div>
-                            </div>
-                        )}
-
-                    </div>
-                ))}
-            </div>
-        </section>
+                    ))}
+                </div>
+            </section>
+            <Numbers />
+        </>
     );
 };
 

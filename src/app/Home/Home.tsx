@@ -64,12 +64,12 @@ const Home = () => {
       <div id="testimonials">
         <Testimonials2 />
       </div>
-        <Process />
+        {/* <Process /> */}
       {/* <div id="contact">
         <Contact />
       </div> */}
-      <Assistance />
-      <Footer />
+      {/* <Assistance /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

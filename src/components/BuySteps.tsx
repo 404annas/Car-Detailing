@@ -12,12 +12,12 @@ const BuySteps = () => {
                         We don’t just sell cars; we understand the culture behind them. We specialize in importing high-grade vehicles directly from Japan and Europe.
                     </p>
 
-                    <p className="mb-3 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#3498db]' size={18}/> JDM Legends:</p>
+                    <p className="mb-3 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#3498db]' size={18} /> JDM Legends:</p>
                     <p className="mb-4">
                         From cult classics to modern performance icons, we navigate the Japanese auction houses to bring you clean, authentic, and compliant Japanese Domestic Market vehicles.
                     </p>
 
-                    <p className="mb-3 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#3498db]' size={18}/> Euro Prestige:</p>
+                    <p className="mb-3 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#3498db]' size={18} /> Euro Prestige:</p>
                     <p>
                         We curate the finest German engineering and Italian flair, ensuring you get access to specifications and trims that are often hard to find locally.
                     </p>
@@ -74,17 +74,17 @@ const BuySteps = () => {
                         The grey import market can be navigating the unknown, but we make it transparent.
                     </p>
 
-                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18}/> Full Compliance:</p>
+                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18} /> Full Compliance:</p>
                     <p className="mb-4">
                         We ensure all imported vehicles meet strict Australian Design Rules (ADR) and compliance standards.
                     </p>
 
-                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18}/> Rigorous Testing:</p>
+                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18} /> Rigorous Testing:</p>
                     <p className="mb-4">
                         Every car, local or imported, is mechanically inspected and professionally detailed before it hits our showroom floor.
                     </p>
 
-                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18}/> Transparent History:</p>
+                    <p className="mb-2 font-semibold flex items-center gap-2"><CheckCircle2 className='text-[#d4ac0d]' size={18} /> Transparent History:</p>
                     <p>
                         We provide clear vehicle history reports and auction sheets (for imports) so you know exactly what you are buying.
                     </p>
@@ -167,11 +167,10 @@ const BuySteps = () => {
                 </div>
 
                 {/* Closing Footer */}
-                <div className="mt-10 p-6 bg-gray-50 rounded-lg border-l-4 border-[#3498db]">
-                    <p className="text-gray-800 font-medium italic">
-                        Ready to find your dream car? Visit our Sydney showroom or speak with our team today.
-                        <span className="inline-block mt-0 font-bold">&nbsp;Drive the Elite way.</span>
-                    </p>
+                <div className="flex items-center justify-center mt-10">
+                    <button className="bg-gradient-to-r from-[#3b82f6] to-[#1a4fc2] text-white font-semibold tracking-wide px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 active:scale-95 cursor-pointer">
+                        Enquire Now
+                    </button>
                 </div>
             </div>
         </section>

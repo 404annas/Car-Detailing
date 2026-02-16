@@ -5,6 +5,7 @@ import { Toaster } from 'sonner';
 import Navbar2 from '@/components/Navbar2';
 import Process from "@/components/Process";
 import Assistance from "@/components/Assistance";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         {children}
         <Process />
         <Assistance />
+        <Footer />
         <Toaster
           position="bottom-right"
           richColors={true}

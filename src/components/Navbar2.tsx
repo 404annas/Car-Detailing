@@ -112,7 +112,7 @@ const Navbar2 = () => {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                     <input
                         type="text"
-                        placeholder="Search here..."
+                        placeholder="Search inventory..."
                         className="w-full bg-gray-100 py-2.5 pl-10 pr-4 rounded-md outline-none text-sm placeholder:text-gray-500"
                     />
                 </div>
@@ -128,10 +128,10 @@ const Navbar2 = () => {
                     </div>
                 ))}
 
-                <button className="flex items-center space-x-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-50 transition-all cursor-pointer whitespace-nowrap">
+                {/* <button className="flex items-center space-x-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-50 transition-all cursor-pointer whitespace-nowrap">
                     <Filter size={18} className="text-gray-500" />
                     <span className="text-sm text-gray-600 font-bold">More filters</span>
-                </button>
+                </button> */}
 
                 <button className="bg-[#050c4e] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#020f86] transition-colors duration-300 cursor-pointer text-sm">
                     Search
