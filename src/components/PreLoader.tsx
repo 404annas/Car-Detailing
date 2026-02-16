@@ -101,7 +101,7 @@ const PreLoader = () => {
 
             {/* Text */}
             <h2 className="mt-6 text-blue-600 font-bold text-lg tracking-tight uppercase animate-pulse orb">
-                Loading...
+                ELITE MOTOR CARS
             </h2>
 
             {/* Custom Animations */}
