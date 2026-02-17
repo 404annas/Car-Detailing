@@ -43,7 +43,7 @@ const HowToBuy = () => {
         <section className="py-10 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Section Heading */}
-                <h2 className="text-3xl font-bold text-[#333] mb-12 ml-2">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#333] mb-12 ml-2">
                     Why Choose Elite Motor Cars
                 </h2>
                 {/* Steps Container */}
@@ -61,7 +61,7 @@ const HowToBuy = () => {
                             </div>
 
                             {/* Step Text */}
-                            <div className="px-3 pr-0 text-white text-xs font-bold leading-tight">
+                            <div className="px-3 pr-0 text-white text-[10px] sm:text-xs font-bold leading-tight">
                                 {step.text}
                             </div>
                         </div>

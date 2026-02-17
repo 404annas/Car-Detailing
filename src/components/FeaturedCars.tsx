@@ -338,7 +338,7 @@ const FeaturedCars = () => {
                         </div>
 
                         {/* Specs */}
-                        <div className="bg-black text-white rounded-xl p-3 space-y-4">
+                        <div className="bg-black text-white rounded-xl p-0 space-y-4">
                             <div className="grid grid-cols-3 gap-4 text-center text-xs sm:text-sm border border-blue-950 rounded-xl py-3 pl-2 pr-1">
                                 {car.specs.map((spec, i) => {
                                     const Icon = spec.icon

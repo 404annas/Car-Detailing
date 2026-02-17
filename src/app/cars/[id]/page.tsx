@@ -49,7 +49,7 @@ const CarDetailsPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-20">
+    <div className="min-h-screen bg-gray-50 pb-10">
 
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-200 orb">
@@ -150,7 +150,7 @@ const CarDetailsPage = () => {
               </div>
 
               {/* Key Specs Grid */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gray-100 p-3 rounded-xl flex items-center gap-3">
                   <div className="bg-white p-2 rounded-lg shadow-sm text-gray-700"><Gauge size={20} /></div>
                   <div>
@@ -262,7 +262,7 @@ const CarDetailsPage = () => {
             </div>
 
             {/* Warranty / Trust Badges */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               <div className="bg-blue-50 border border-blue-100 p-4 rounded-xl flex flex-col items-center text-center">
                 <ShieldCheck className="text-blue-600 mb-2" size={24} />
                 <span className="text-xs font-bold text-blue-800 uppercase orb">3 Year Warranty</span>

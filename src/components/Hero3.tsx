@@ -26,17 +26,17 @@ const Hero3 = () => {
                         <Image
                             src={heroImg2}
                             alt="Red Truck"
-                            className="w-auto h-auto max-w-[120%] md:max-w-none md:h-[280px] lg:h-[280px] object-contain object-right scale-x-[-1]"
+                            className="w-auto h-auto max-w-[150%] sm:max-w-[120%] md:max-w-none md:h-[280px] lg:h-[280px] object-contain object-right scale-x-[-1]"
                             priority
                         />
                     </div>
 
                     {/* Center Car (Light Blue SUV) - Front and Center */}
-                    <div className="shrink-0 w-[45%] md:w-[50%] z-10 relative px-2 md:px-0">
+                    <div className="shrink-0 w-[45%] md:w-[50%] z-10 relative px-0">
                         <Image
                             src={heroImg1}
                             alt="Cyan SUV"
-                            className="w-auto h-auto  max-w-[120%] md:max-w-none md:h-[280px] lg:h-[250px] object-contain drop-shadow-xl scale-x-[-1]"
+                            className="w-auto h-auto max-w-[110%] sm:max-w-[120%] md:max-w-none md:h-[280px] lg:h-[250px] object-contain drop-shadow-xl scale-x-[-1]"
                             priority
                         />
                     </div>
@@ -46,7 +46,7 @@ const Hero3 = () => {
                         <Image
                             src={heroImg3}
                             alt="Blue SUV"
-                            className="w-auto h-auto max-w-[120%] md:max-w-none md:h-[280px] lg:h-[280px] object-contain object-left scale-x-[-1]"
+                            className="w-auto h-auto max-w-[150%] sm:max-w-[120%] md:max-w-none md:h-[280px] lg:h-[280px] object-contain object-left scale-x-[-1]"
                             priority
                         />
                     </div>

@@ -66,7 +66,7 @@ const Footer2 = () => {
             </div>
 
             {/* Bottom Copyright Section */}
-            <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between text-gray-400 text-sm gap-4">
+            <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between text-gray-400 text-sm gap-4 sm:text-left text-center sm:items-start items-center">
                 <p>Copyright © 2026 Elite Motor Cars | All rights reserved</p>
                 <div className="flex gap-6">
                     <p>Developed By <a className='text-white' href="http://techxudo.com/" target='_blank'>Techxudo</a></p>

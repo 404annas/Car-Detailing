@@ -46,7 +46,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${orbitron.variable} antialiased`}
       >
-        <Navbar2 />
+        {/* <Navbar2 /> */}
         {children}
         <Process />
         <Assistance />

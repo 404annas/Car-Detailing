@@ -154,7 +154,7 @@ const CartPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mt-10">
+      <div className="container mx-auto px-4 sm:px-6 mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
           {/* --- LEFT COLUMN: Items & Form (lg:col-span-8) --- */}
@@ -184,9 +184,9 @@ const CartPage = () => {
                     {/* Details */}
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
-                        <div className="flex justify-between items-start">
-                          <h3 className="text-lg orb font-bold text-gray-900 uppercase leading-tight">{car.name}</h3>
-                          <span className="text-lg orb font-black text-blue-600">${car.price}</span>
+                        <div className="flex justify-between items-center">
+                          <h3 className="text-sm sm:text-base md:text-lg orb font-bold text-gray-900 uppercase leading-none">{car.name}</h3>
+                          <span className="text-base sm:text-lg orb font-black text-blue-600">${car.price}</span>
                         </div>
 
                         {/* Specs Grid */}
@@ -223,7 +223,7 @@ const CartPage = () => {
             </div>
 
             {/* 2. Delivery & Personal Info */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 md:p-8">
               <h2 className="orb font-bold text-lg text-gray-900 uppercase mb-6 flex items-center gap-2">
                 <MapPin size={20} className="text-blue-500" /> Delivery Details
               </h2>

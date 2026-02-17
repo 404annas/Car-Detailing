@@ -21,7 +21,7 @@ const Assistance = () => {
                         <Phone size={20} className="text-[#2d1052] fill-[#2d1052]" />
                     </div>
                     <div className='flex justify-between items-center w-full'>
-                        <p className="text-[#2d1052] font-semibold text-base">
+                        <p className="text-[#2d1052] font-semibold text-sm sm:text-base">
                             Call us on <span className="font-bold">+61 466 318 074</span>
                         </p>
                         <ChevronRight size={20} className="text-black group-hover:translate-x-1 transition-transform" />
@@ -35,7 +35,7 @@ const Assistance = () => {
                         <Mail size={20} className="text-[#2d1052]" />
                     </div>
                     <div className="flex justify-between items-center w-full">
-                        <p className="text-[#2d1052] font-semibold text-base">
+                        <p className="text-[#2d1052] font-semibold text-sm sm:text-base">
                             contact@elitemotorcars.com.au
                         </p>
                         {/* Right Arrow Icon */}
