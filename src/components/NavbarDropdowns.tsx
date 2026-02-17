@@ -1,7 +1,8 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { ChevronDown, Search, X } from "lucide-react";
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 // Aapke imported assets
 import mercedesImg from "@/assets/mercedes.png"
@@ -39,7 +40,18 @@ const CAR_DATA = {
     }
 };
 
-const NavbarDropdowns = () => {
+interface NavbarDropdownsProps {
+    searchQuery?: string;
+    onSearchQueryChange?: (query: string) => void;
+    onTriggerSearch?: (trigger: () => void) => void;
+}
+
+const NavbarDropdowns: React.FC<NavbarDropdownsProps> = ({
+    searchQuery = "",
+    onSearchQueryChange,
+    onTriggerSearch
+}) => {
+    const router = useRouter();
     const [activeTab, setActiveTab] = useState<string | null>(null);
     const [selectedMake, setSelectedMake] = useState<string>("");
     const [selectedModel, setSelectedModel] = useState<string>("");
@@ -47,6 +59,34 @@ const NavbarDropdowns = () => {
     const [yearRange, setYearRange] = useState({ from: "", to: "" });
 
     const dropdownRef = useRef<HTMLDivElement>(null);
+    const searchFnRef = useRef<() => void>(() => {});
+
+    const handleRedirectToSearch = useCallback(() => {
+        const params = new URLSearchParams();
+        if (selectedMake) params.set('make', selectedMake);
+        if (selectedModel) params.set('model', selectedModel);
+        if (priceRange.min) params.set('minPrice', priceRange.min);
+        if (priceRange.max) params.set('maxPrice', priceRange.max);
+        if (yearRange.from) params.set('fromYear', yearRange.from);
+        if (yearRange.to) params.set('toYear', yearRange.to);
+        if (searchQuery) params.set('search', searchQuery);
+
+        if (params.toString()) {
+            router.push(`/search-results?${params.toString()}`);
+        }
+    }, [selectedMake, selectedModel, priceRange, yearRange, searchQuery, router]);
+
+    // Keep the ref updated with the latest function
+    useEffect(() => {
+        searchFnRef.current = handleRedirectToSearch;
+    }, [handleRedirectToSearch]);
+
+    // Expose the trigger function to parent - only once on mount
+    useEffect(() => {
+        if (onTriggerSearch) {
+            onTriggerSearch(() => searchFnRef.current());
+        }
+    }, []); // Empty deps - only run once on mount
 
     // Outside click par dropdown close karne ke liye code
     useEffect(() => {
@@ -68,6 +108,10 @@ const NavbarDropdowns = () => {
         setSelectedMake(make);
         setSelectedModel(""); // Make change hone par model reset ho jayega
         setActiveTab("Model"); // Make select karte hi Model dropdown khul jayega
+    };
+
+    const handleApplyFilters = () => {
+        setActiveTab(null);
     };
 
     return (
@@ -228,7 +272,7 @@ const NavbarDropdowns = () => {
 
                         </div>
 
-                        <button onClick={() => setActiveTab(null)} className="w-full bg-[#050c4e] hover:scale-98 transition-all duration-300 cursor-pointer text-white rounded-md py-2 mt-4 text-sm font-bold">Apply Filter</button>
+                        <button onClick={() => handleApplyFilters()} className="w-full bg-[#050c4e] hover:scale-98 transition-all duration-300 cursor-pointer text-white rounded-md py-2 mt-4 text-sm font-bold">Apply Filter</button>
 
                     </div>
 
@@ -310,7 +354,7 @@ const NavbarDropdowns = () => {
 
                         </div>
 
-                        <button onClick={() => setActiveTab(null)} className="w-full bg-[#050c4e] hover:scale-98 transition-all duration-300 cursor-pointer text-white rounded-md py-2 mt-4 text-sm font-bold">Apply Filter</button>
+                        <button onClick={() => handleApplyFilters()} className="w-full bg-[#050c4e] hover:scale-98 transition-all duration-300 cursor-pointer text-white rounded-md py-2 mt-4 text-sm font-bold">Apply Filter</button>
 
                     </div>
 
@@ -320,8 +364,13 @@ const NavbarDropdowns = () => {
 
             <button
                 onClick={() => {
-                    setSelectedMake(""); setSelectedModel("");
-                    setPriceRange({ min: "", max: "" }); setYearRange({ from: "", to: "" });
+                    setSelectedMake(""); 
+                    setSelectedModel("");
+                    setPriceRange({ min: "", max: "" }); 
+                    setYearRange({ from: "", to: "" });
+                    if (onSearchQueryChange) {
+                        onSearchQueryChange("");
+                    }
                 }}
                 className="text-gray-500 cursor-pointer text-sm font-bold hover:underline transition-all duration-300 px-2 whitespace-nowrap"
             >

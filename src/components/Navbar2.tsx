@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import {
     Search,
@@ -18,11 +18,15 @@ import {
 } from "lucide-react";
 import logo from "@/assets/logo.svg";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import NavbarDropdowns from "@/components/NavbarDropdowns";
 
 const Navbar2 = () => {
+    const router = useRouter();
     const [isScrolled, setIsScrolled] = useState(false);
+    const [searchQuery, setSearchQuery] = useState("");
+    const searchTriggerRef = useRef<(() => void) | null>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,6 +36,16 @@ const Navbar2 = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const handleSearchClick = () => {
+        if (searchTriggerRef.current) {
+            searchTriggerRef.current();
+        }
+    };
+
+    const handleTriggerSearch = (triggerFn: () => void) => {
+        searchTriggerRef.current = triggerFn;
+    };
 
     return (
         <nav className="w-full flex flex-col sticky top-0 z-[100] transition-all duration-300">
@@ -116,6 +130,13 @@ const Navbar2 = () => {
                         type="text"
                         placeholder="Search inventory..."
                         className="w-full bg-gray-100 py-2.5 pl-10 pr-4 rounded-md outline-none text-sm placeholder:text-gray-500"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                handleSearchClick();
+                            }
+                        }}
                     />
                 </div>
 
@@ -130,14 +151,16 @@ const Navbar2 = () => {
                     </div>
                 ))} */}
 
-                <NavbarDropdowns />
+                <NavbarDropdowns 
+                    searchQuery={searchQuery}
+                    onSearchQueryChange={setSearchQuery}
+                    onTriggerSearch={handleTriggerSearch}
+                />
 
-                {/* <button className="flex items-center space-x-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-50 transition-all cursor-pointer whitespace-nowrap">
-                    <Filter size={18} className="text-gray-500" />
-                    <span className="text-sm text-gray-600 font-bold">More filters</span>
-                </button> */}
-
-                <button className="bg-[#050c4e] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#020f86] transition-colors duration-300 cursor-pointer text-sm">
+                <button 
+                    onClick={handleSearchClick}
+                    className="bg-[#050c4e] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#020f86] transition-colors duration-300 cursor-pointer text-sm"
+                >
                     Search
                 </button>
                 {/* <button className="text-gray-500 cursor-pointer text-sm font-bold hover:underline px-2">
