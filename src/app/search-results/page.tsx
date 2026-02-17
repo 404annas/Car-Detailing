@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +40,7 @@ interface CarDetails {
     license: string;
 }
 
-const SearchResultsPage = () => {
+const SearchResultsContent = () => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [filteredCars, setFilteredCars] = useState<CarDetails[]>([]);
@@ -243,4 +243,14 @@ const SearchResultsPage = () => {
     );
 };
 
-export default SearchResultsPage;
+export default function SearchResultsPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center">
+                <p className="text-lg font-semibold text-gray-600">Loading Search Results...</p>
+            </div>
+        }>
+            <SearchResultsContent />
+        </Suspense>
+    );
+}
