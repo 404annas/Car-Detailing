@@ -77,7 +77,7 @@ const Bot = () => {
     return (
         <>
             {/* --- FLOATING ACTION BUTTON --- */}
-            <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end gap-3 pointer-events-none">
+            <div className="fixed bottom-5 sm:bottom-6 right-5 sm:right-6 z-[9999] flex flex-col items-end gap-3 pointer-events-none">
                 {showPopup && !showModal && !showSuccess && (
                     <div
                         onClick={() => setShowModal(true)}
