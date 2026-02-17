@@ -19,6 +19,8 @@ import {
 import logo from "@/assets/logo.svg";
 import Link from "next/link";
 
+import NavbarDropdowns from "@/components/NavbarDropdowns";
+
 const Navbar2 = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -44,7 +46,7 @@ const Navbar2 = () => {
                     <Link href="/how-we-deliver" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">How We Deliver</Link>
                     <Link href="/choose-us" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Why Choose Us</Link>
                     <a href="#" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">Testimonials</a>
-                    <a href="/faqs" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">FAQ's</a>
+                    <Link href="/faqs" className="hover:opacity-80 transition-all duration-300 whitespace-nowrap">FAQ's</Link>
                 </div>
 
                 {/* Right Side Icons & Selectors */}
@@ -108,7 +110,7 @@ const Navbar2 = () => {
                 <div className={`transition-all duration-500 ${isScrolled ? "min-w-[65px]" : "min-w-[125px]"}`}></div>
 
                 {/* Search Input */}
-                <div className="relative flex-1 min-w-[200px]">
+                <div className="relative flex-0.5 min-w-[200px]">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                     <input
                         type="text"
@@ -118,7 +120,7 @@ const Navbar2 = () => {
                 </div>
 
                 {/* Dropdowns */}
-                {["Make", "Model", "Price", "Year"].map((label) => (
+                {/* {["Make", "Model", "Price", "Year"].map((label) => (
                     <div key={label} className="relative min-w-[110px] flex-1">
                         <span className="absolute -top-2 left-3 bg-white px-1 text-[10px] text-gray-500 z-10 font-bold uppercase tracking-tight">{label}</span>
                         <div className="border border-gray-300 rounded-md py-2 px-3 flex items-center justify-between cursor-pointer hover:border-gray-400 transition-all">
@@ -126,7 +128,9 @@ const Navbar2 = () => {
                             <ChevronDown size={14} className="text-gray-400" />
                         </div>
                     </div>
-                ))}
+                ))} */}
+
+                <NavbarDropdowns />
 
                 {/* <button className="flex items-center space-x-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-50 transition-all cursor-pointer whitespace-nowrap">
                     <Filter size={18} className="text-gray-500" />
@@ -136,9 +140,9 @@ const Navbar2 = () => {
                 <button className="bg-[#050c4e] text-white font-bold py-2.5 px-10 rounded-md hover:bg-[#020f86] transition-colors duration-300 cursor-pointer text-sm">
                     Search
                 </button>
-                <button className="text-gray-500 cursor-pointer text-sm font-bold hover:underline px-2">
+                {/* <button className="text-gray-500 cursor-pointer text-sm font-bold hover:underline px-2">
                     Reset
-                </button>
+                </button> */}
             </div>
         </nav>
     );
